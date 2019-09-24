@@ -1,6 +1,6 @@
 [Design]
 Version=1.0
-HierarchyMode=0
+HierarchyMode=2
 ChannelRoomNamingStyle=1
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component$ChannelAlpha
@@ -14,7 +14,7 @@ PinSwapBy_Netlabel=1
 PinSwapBy_Pin=1
 AllowPortNetNames=0
 AllowSheetEntryNetNames=1
-AppendSheetNumberToLocalNets=0
+AppendSheetNumberToLocalNets=1
 NetlistSinglePinNets=0
 DefaultConfiguration=Sources
 UserID=0xFFFFFFFF

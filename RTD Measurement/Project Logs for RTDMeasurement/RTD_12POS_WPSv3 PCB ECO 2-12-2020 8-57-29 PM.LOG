@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=-12 Pin=R24-2
+Removed Member From Class: ClassName=U_Neg12V Member=R24
+Added Pin To Net: NetName=-12 Pin=R22-1
+Added Pin To Net: NetName=-12 Pin=U7-1
+Added Pin To Net: NetName=-12 Pin=U7-4
+Added Pin To Net: NetName=-12 Pin=U7-5
+Added Pin To Net: NetName=-12 Pin=U7-8
+Added Pin To Net: NetName=-12 Pin=U7-9
+Added Pin To Net: NetName=-12 Pin=U7-29
+Added Pin To Net: NetName=-12 Pin=U7-30
+Added Pin To Net: NetName=-12 Pin=U7-32
+Added Pin To Net: NetName=-12 Pin=U7-33
+Added Pin To Net: NetName=-12 Pin=U7-34
+Added Pin To Net: NetName=-12 Pin=U7-37
+Added Pin To Net: NetName=-12 Pin=U8-1

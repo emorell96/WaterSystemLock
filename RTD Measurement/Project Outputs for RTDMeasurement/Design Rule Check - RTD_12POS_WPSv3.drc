@@ -1,0 +1,344 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc
+Date     : 2/25/2020
+Time     : 11:04:36 PM
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('AGND'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('-12A'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.105mm) (Max=0.508mm) (Preferred=0.15mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('GND'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('DGND_Out'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('+5_OUT'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('+5'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('+12'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('-12'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('-5A'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('-5'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=1.27mm) (Preferred=0.381mm) (InNet('Vext'))
+Rule Violations :0
+
+Processing Rule : Routing Layers(All)
+Rule Violations :0
+
+Processing Rule : Routing Via (Templates Used To Check Via: v40h20m0mx0, v40h20m0mx0_2670034071, v60h30, v60h30m0mx0, v60h30m0mx0_2670034071, v60h30_2670034071, v127h71) (All)
+Rule Violations :0
+
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.254mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.381mm) (Max=0.381mm) (Prefered=0.381mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Fabrication Testpoint Style (Under Component=Yes) (All)
+Rule Violations :0
+
+Processing Rule : Fabrication Testpoint Usage (Valid =Don't care, Allow multiple per net=No) (All)
+Rule Violations :0
+
+Processing Rule : Assembly Testpoint Style (Under Component=Yes) (All)
+Rule Violations :0
+
+Processing Rule : Assembly Testpoint Usage (Valid =Don't care, Allow multiple per net=No) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.1mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.2mm) (Max=3.5mm) (All)
+Rule Violations :0
+
+Processing Rule : Pads and Vias to follow the Drill pairs settings
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Text "© Enrique Morell
+All rights reserved, 2020" (29.6mm,8.025mm) on Bottom Overlay 
+Rule Violations :1
+
+Processing Rule : Room U_ComparisonSchH (Bounding Region = (96.35mm, 69.85mm, 115.125mm, 82.325mm) (InComponentClass('U_ComparisonSchH'))
+Rule Violations :0
+
+Processing Rule : Room U_ComparisonSchF (Bounding Region = (63mm, 57.5mm, 82mm, 71.25mm) (InComponentClass('U_ComparisonSchF'))
+Rule Violations :0
+
+Processing Rule : Room U_ComparisonSchI (Bounding Region = (96.35mm, 85.35mm, 115.125mm, 98.825mm) (InComponentClass('U_ComparisonSchI'))
+Rule Violations :0
+
+Processing Rule : Room U_ComparisonSchK (Bounding Region = (96.3mm, 118.3mm, 115.2mm, 131.8mm) (InComponentClass('U_ComparisonSchK'))
+Rule Violations :0
+
+Processing Rule : Room U_ComparisonSchJ (Bounding Region = (96.5mm, 101.726mm, 115.5mm, 115.476mm) (InComponentClass('U_ComparisonSchJ'))
+Rule Violations :0
+
+Processing Rule : Room U_ComparisonSchE (Bounding Region = (63.25mm, 72.5mm, 82.25mm, 86.25mm) (InComponentClass('U_ComparisonSchE'))
+Rule Violations :0
+
+Processing Rule : Room U_12VSupply (Bounding Region = (111.975mm, 39.225mm, 136.025mm, 72.725mm) (InComponentClass('U_12VSupply'))
+Rule Violations :0
+
+Processing Rule : Room U_5VSupply (Bounding Region = (94.7mm, 35.5mm, 124.4mm, 55.3mm) (InComponentClass('U_5VSupply'))
+Rule Violations :0
+
+Processing Rule : Room U_ComparisonSchB (Bounding Region = (63mm, 119.5mm, 82mm, 133.25mm) (InComponentClass('U_ComparisonSchB'))
+Rule Violations :0
+
+Processing Rule : Room U_ComparisonSchD (Bounding Region = (63mm, 88.5mm, 82mm, 102.25mm) (InComponentClass('U_ComparisonSchD'))
+Rule Violations :0
+
+Processing Rule : Room U_ComparisonSchC (Bounding Region = (63mm, 104mm, 82mm, 117.75mm) (InComponentClass('U_ComparisonSchC'))
+Rule Violations :0
+
+Processing Rule : Room U_ComparisonSchL (Bounding Region = (96.5mm, 134.71mm, 115.5mm, 148.46mm) (InComponentClass('U_ComparisonSchL'))
+Rule Violations :0
+
+Processing Rule : Room U_ComparisonSchA (Bounding Region = (63.3mm, 135.1mm, 82.2mm, 148.7mm) (InComponentClass('U_ComparisonSchA'))
+Rule Violations :0
+
+Processing Rule : Room U_VrefSchC (Bounding Region = (58.6mm, 137.6mm, 71mm, 144.8mm) (InComponentClass('U_VrefSchC'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchA (Bounding Region = (25.1mm, 131.8mm, 48.2mm, 149mm) (InComponentClass('U_ConnectorSchA'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchC (Bounding Region = (25mm, 97.75mm, 47.75mm, 115mm) (InComponentClass('U_ConnectorSchC'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchB (Bounding Region = (25mm, 115mm, 47.75mm, 132.25mm) (InComponentClass('U_ConnectorSchB'))
+Rule Violations :0
+
+Processing Rule : Room U_BufferOutL (Bounding Region = (57.1mm, 37.9mm, 83.1mm, 44.3mm) (InComponentClass('U_BufferOutL'))
+Rule Violations :0
+
+Processing Rule : Room MainSch (Bounding Region = (61.5mm, 27.5mm, 118.5mm, 35.5mm) (InComponentClass('MainSch'))
+Rule Violations :0
+
+Processing Rule : Room U_BufferOutMonL (Bounding Region = (30.4mm, 37.9mm, 56.4mm, 44.3mm) (InComponentClass('U_BufferOutMonL'))
+Rule Violations :0
+
+Processing Rule : Room U_BufferOutR (Bounding Region = (86.971mm, 67.471mm, 95.029mm, 134.759mm) (InComponentClass('U_BufferOutR'))
+Rule Violations :0
+
+Processing Rule : Room U_BufferOutMonR (Bounding Region = (120.7mm, 34.7mm, 142.1mm, 41.3mm) (InComponentClass('U_BufferOutMonR'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchD (Bounding Region = (25mm, 80.25mm, 47.75mm, 97.5mm) (InComponentClass('U_ConnectorSchD'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchL (Bounding Region = (128.75mm, 132.55mm, 153.975mm, 152.25mm) (InComponentClass('U_ConnectorSchL'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchK (Bounding Region = (129.5mm, 116.5mm, 154.1mm, 131.9mm) (InComponentClass('U_ConnectorSchK'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogA (Bounding Region = (47.8mm, 135.8mm, 61.4mm, 147mm) (InComponentClass('U_RTDAnalogA'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchG (Bounding Region = (129.25mm, 48.5mm, 154mm, 65.5mm) (InComponentClass('U_ConnectorSchG'))
+Rule Violations :0
+
+Processing Rule : Room U_ComparisonSchG (Bounding Region = (96.5mm, 52.25mm, 115.5mm, 66mm) (InComponentClass('U_ComparisonSchG'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchF (Bounding Region = (25mm, 45.25mm, 47.75mm, 62.5mm) (InComponentClass('U_ConnectorSchF'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchE (Bounding Region = (25mm, 62.75mm, 47.75mm, 80mm) (InComponentClass('U_ConnectorSchE'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchH (Bounding Region = (129.5mm, 64mm, 154.25mm, 81mm) (InComponentClass('U_ConnectorSchH'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchJ (Bounding Region = (129.5mm, 98.1mm, 154.1mm, 114.9mm) (InComponentClass('U_ConnectorSchJ'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnectorSchI (Bounding Region = (129.5mm, 81mm, 154.25mm, 98mm) (InComponentClass('U_ConnectorSchI'))
+Rule Violations :0
+
+Processing Rule : Room U_VrefSchA (Bounding Region = (48.6mm, 96.8mm, 61mm, 104mm) (InComponentClass('U_VrefSchA'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogG (Bounding Region = (115.33mm, 48.83mm, 129.03mm, 59.93mm) (InComponentClass('U_RTDAnalogG'))
+Rule Violations :0
+
+Processing Rule : Room U_PowerIsolation (Bounding Region = (92.5mm, 129.2mm, 119.4mm, 143mm) (InComponentClass('U_PowerIsolation'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogB (Bounding Region = (47.5mm, 119.135mm, 61.25mm, 130.385mm) (InComponentClass('U_RTDAnalogB'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogD (Bounding Region = (47.8mm, 86mm, 61.4mm, 97.1mm) (InComponentClass('U_RTDAnalogD'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogC (Bounding Region = (47.9mm, 102.6mm, 61.4mm, 113.8mm) (InComponentClass('U_RTDAnalogC'))
+Rule Violations :0
+
+Processing Rule : Room U_PowerDelivery (Bounding Region = (50.3mm, 37.9mm, 105.9mm, 58mm) (InComponentClass('U_PowerDelivery'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnGd- (Bounding Region = (45.4mm, 52.7mm, 89.5mm, 102.7mm) (InComponentClass('U_ConnGd-'))
+Rule Violations :0
+
+Processing Rule : Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+'))
+Rule Violations :0
+
+Processing Rule : Room U_IsolationOut (Bounding Region = (63.7mm, 92.8mm, 107.7mm, 135.4mm) (InComponentClass('U_IsolationOut'))
+Rule Violations :0
+
+Processing Rule : Room U_Neg12V (Bounding Region = (44.7mm, 101mm, 70.6mm, 127.2mm) (InComponentClass('U_Neg12V'))
+Rule Violations :0
+
+Processing Rule : Room U_MonitorOut (Bounding Region = (34.45mm, 27.575mm, 148.025mm, 35.425mm) (InComponentClass('U_MonitorOut'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogE (Bounding Region = (47.5mm, 69.29mm, 61.25mm, 80.54mm) (InComponentClass('U_RTDAnalogE'))
+Rule Violations :0
+
+Processing Rule : Room U_VccConnSch (Bounding Region = (136.696mm, 37.871mm, 150.879mm, 49.129mm) (InComponentClass('U_VccConnSch'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogJ (Bounding Region = (115.6mm, 101.375mm, 128.975mm, 112.375mm) (InComponentClass('U_RTDAnalogJ'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogK (Bounding Region = (118.2mm, 118.875mm, 128.975mm, 131.55mm) (InComponentClass('U_RTDAnalogK'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogL (Bounding Region = (118.2mm, 136.3mm, 129mm, 148.3mm) (InComponentClass('U_RTDAnalogL'))
+Rule Violations :0
+
+Processing Rule : Room U_VrefSchB (Bounding Region = (96.9mm, 65.3mm, 109.6mm, 71.9mm) (InComponentClass('U_VrefSchB'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogF (Bounding Region = (47.5mm, 52.675mm, 61.25mm, 63.925mm) (InComponentClass('U_RTDAnalogF'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogI (Bounding Region = (115.33mm, 83.828mm, 129.03mm, 94.928mm) (InComponentClass('U_RTDAnalogI'))
+Rule Violations :0
+
+Processing Rule : Room U_RTDAnalogH (Bounding Region = (115.6mm, 66.3mm, 129mm, 77.4mm) (InComponentClass('U_RTDAnalogH'))
+Rule Violations :0
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) 
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.055mm < 0.1mm) Between Pad U4-19(99.225mm,30.465mm) on Bottom Layer And Pad U4-40(98.16mm,32.14mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.055mm]Waived by Enrique Morell Salcedo at 2/25/2020 10:45:14 PMPart of not signal pad, and same net
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U4-21(96.875mm,30.145mm) on Bottom Layer And Pad U4-41(95.42mm,31.82mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:37:35 PMSame net. So no risk of shortcircuit. Pin 21 and 41. (PH)
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U4-22(95.975mm,30.145mm) on Bottom Layer And Pad U4-41(95.42mm,31.82mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:38:18 PMSame net. So no risk of shortcircuit. Pin 22 and 41. (PH)
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U4-23(95.075mm,30.145mm) on Bottom Layer And Pad U4-41(95.42mm,31.82mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:38:51 PMSame net. So no risk of shortcircuit. Pin 23 and 41. (PH)
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U4-24(94.175mm,30.145mm) on Bottom Layer And Pad U4-41(95.42mm,31.82mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:39:04 PMSame net. So no risk of shortcircuit. Pin 24 and 41. (PH)
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.055mm < 0.1mm) Between Pad U4-40(98.16mm,32.14mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.055mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U4-41(95.42mm,31.82mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U4-41(95.42mm,31.82mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U4-41(95.42mm,31.82mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U4-41(95.42mm,31.82mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.055mm < 0.1mm) Between Pad U7-19(31.85mm,88.82mm) on Bottom Layer And Pad U7-40(30.785mm,90.495mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.055mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U7-21(29.5mm,88.5mm) on Bottom Layer And Pad U7-41(28.045mm,90.175mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U7-22(28.6mm,88.5mm) on Bottom Layer And Pad U7-41(28.045mm,90.175mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U7-23(27.7mm,88.5mm) on Bottom Layer And Pad U7-41(28.045mm,90.175mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U7-24(26.8mm,88.5mm) on Bottom Layer And Pad U7-41(28.045mm,90.175mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.055mm < 0.1mm) Between Pad U7-40(30.785mm,90.495mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.055mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U7-41(28.045mm,90.175mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U7-41(28.045mm,90.175mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U7-41(28.045mm,90.175mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (0.06mm < 0.1mm) Between Pad U7-41(28.045mm,90.175mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PMSame net. So no risk of shortcircuit.
+Waived Violations :20
+
+Waived Violations Of Rule : Room U_ConnectorSchC (Bounding Region = (25mm, 97.75mm, 47.75mm, 115mm) (InComponentClass('U_ConnectorSchC'))
+   Waived Violation between Room Definition: Between Room U_ConnectorSchC (Bounding Region = (25mm, 97.75mm, 47.75mm, 115mm) (InComponentClass('U_ConnectorSchC')) And SMT Small Component R28C-0.0 (18.25mm,78.25mm) on Top Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+Waived Violations :1
+
+Waived Violations Of Rule : Room U_ConnectorSchB (Bounding Region = (25mm, 115mm, 47.75mm, 132.25mm) (InComponentClass('U_ConnectorSchB'))
+   Waived Violation between Room Definition: Between Room U_ConnectorSchB (Bounding Region = (25mm, 115mm, 47.75mm, 132.25mm) (InComponentClass('U_ConnectorSchB')) And SMT Small Component R28B-0.0 (18.25mm,95.5mm) on Top Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+Waived Violations :1
+
+Waived Violations Of Rule : Room MainSch (Bounding Region = (61.5mm, 27.5mm, 118.5mm, 35.5mm) (InComponentClass('MainSch'))
+   Waived Violation between Room Definition: Between Room MainSch (Bounding Region = (61.5mm, 27.5mm, 118.5mm, 35.5mm) (InComponentClass('MainSch')) And SIP Component J6-0022272081 (83.23mm,4mm) on Top Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+Waived Violations :1
+
+Waived Violations Of Rule : Room U_BufferOutR (Bounding Region = (86.971mm, 67.471mm, 95.029mm, 134.759mm) (InComponentClass('U_BufferOutR'))
+   Waived Violation between Room Definition: Between Room U_BufferOutR (Bounding Region = (86.971mm, 67.471mm, 95.029mm, 134.759mm) (InComponentClass('U_BufferOutR')) And SOIC Component U10B-ADA4075-2ARZ (88.2mm,10.5mm) on Top Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+   Waived Violation between Room Definition: Between Room U_BufferOutR (Bounding Region = (86.971mm, 67.471mm, 95.029mm, 134.759mm) (InComponentClass('U_BufferOutR')) And SOIC Component U5B-ADA4075-2ARZ (72mm,10.5mm) on Top Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+   Waived Violation between Room Definition: Between Room U_BufferOutR (Bounding Region = (86.971mm, 67.471mm, 95.029mm, 134.759mm) (InComponentClass('U_BufferOutR')) And SOIC Component U9B-ADA4075-2ARZ (80.1mm,10.5mm) on Top Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+Waived Violations :3
+
+Waived Violations Of Rule : Room U_ConnectorSchD (Bounding Region = (25mm, 80.25mm, 47.75mm, 97.5mm) (InComponentClass('U_ConnectorSchD'))
+   Waived Violation between Room Definition: Between Room U_ConnectorSchD (Bounding Region = (25mm, 80.25mm, 47.75mm, 97.5mm) (InComponentClass('U_ConnectorSchD')) And SMT Small Component R28D-0.0 (18.25mm,60.75mm) on Top Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+Waived Violations :1
+
+Waived Violations Of Rule : Room U_ConnectorSchF (Bounding Region = (25mm, 45.25mm, 47.75mm, 62.5mm) (InComponentClass('U_ConnectorSchF'))
+   Waived Violation between Room Definition: Between Room U_ConnectorSchF (Bounding Region = (25mm, 45.25mm, 47.75mm, 62.5mm) (InComponentClass('U_ConnectorSchF')) And SMT Small Component R28F-0.0 (18.25mm,25.75mm) on Top Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+Waived Violations :1
+
+Waived Violations Of Rule : Room U_ConnectorSchE (Bounding Region = (25mm, 62.75mm, 47.75mm, 80mm) (InComponentClass('U_ConnectorSchE'))
+   Waived Violation between Room Definition: Between Room U_ConnectorSchE (Bounding Region = (25mm, 62.75mm, 47.75mm, 80mm) (InComponentClass('U_ConnectorSchE')) And SMT Small Component R28E-0.0 (18.25mm,43.25mm) on Top Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+Waived Violations :1
+
+Waived Violations Of Rule : Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+'))
+   Waived Violation between Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SIP Component CF1A-0022272081 (64.5mm,63.89mm) on Top Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+   Waived Violation between Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SIP Component CF2A-0022272081 (64.5mm,41.23mm) on Top Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+   Waived Violation between Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SMT Small Component C15A-0.1uF (78.14mm,82.56mm) on Bottom Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+   Waived Violation between Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SMT Small Component C17A-0.1uF (82.34mm,62.16mm) on Bottom Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+   Waived Violation between Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SMT Small Component C18A-0.1uF (69.5mm,65mm) on Bottom Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+   Waived Violation between Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SMT Small Component C19A-0.1uF (83.1mm,48.5mm) on Bottom Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+   Waived Violation between Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SMT Small Component C20A-0.1uF (68.3mm,82.6mm) on Bottom Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+   Waived Violation between Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SOIC Component IC1A-SI8640BD-B-IS (74.84mm,75.505mm) on Bottom Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+   Waived Violation between Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SOIC Component IC2A-SI8640BD-B-IS (73.84mm,58.16mm) on Bottom Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+   Waived Violation between Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SOIC Component IC3A-SI8640BD-B-IS (76.14mm,43.46mm) on Bottom Layer Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PMWho cares about rooms crossing each other...
+Waived Violations :10
+
+
+Violations Detected : 1
+Waived Violations : 39
+Time Elapsed        : 00:00:06

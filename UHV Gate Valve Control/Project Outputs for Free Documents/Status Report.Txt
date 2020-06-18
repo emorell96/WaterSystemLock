@@ -1,0 +1,15 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 6:41:35 PM On 5/5/2020
+
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of BOM Document [UHV Gate Valve Control.BomDoc]
+   Generated File[//d.docs.live.net/5d0226765d40c358/Academic Files/Weld Lab/Altium Projects/InterlockSystem/UHV Gate Valve Control/Project Outputs for Free Documents/BOM/Bill of Materials-UHV Gate Valve Control.xls]
+   Generated File[Bill of Materials-UHV Gate Valve Control.xls]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 6:41:46 PM On 5/5/2020

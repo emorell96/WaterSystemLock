@@ -1,0 +1,121 @@
+Removed Pin From Net: NetName=NetIC2_11 Pin=IC2-11
+Removed Pin From Net: NetName=GND Pin=Relay-1
+Removed Pin From Net: NetName=NetIC2_6 Pin=Relay-2
+Removed Member From Class: ClassName=U_IonValveCtrl Member=Relay
+Change Component Designator: OldDesignator=RLOK NewDesignator=RLOK2
+Added Component: Designator=C13(CAP 0805/2012)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104KACNNNC.jsp"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Digi-Key listing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://digikey.com/product-detail/en/CL21B104KACNNNC/1276-1099-2-ND/3886757"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Package"; Value = "0805 (2012 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Samsung Electro-Mechanics America, Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "5699"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CL21B104KACNNNC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0.0099"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1276-1099-2-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TemperatureCoefficient"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TemperatureRange"; Value = "-55C ~ 125C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "25V"; VariantName = "[No Variations]"
+Added Component: Designator=R14(RES 1206/3216)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ8ENF6200V+7+WW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Digi-Key listing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://digikey.com/product-detail/en/ERJ-8ENF6200V/P620FTR-ND/1746078"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Package"; Value = "1206 (3216 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic Electronic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "3356"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-8ENF6200V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PowerRating"; Value = "0.25W, 1/4W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0.0093"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P620FTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TemperatureCoefficient"; Value = "100ppm/C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TemperatureRange"; Value = "-55C ~ 155C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Thick Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "620"; VariantName = "[No Variations]"
+Added Component: Designator=RLOK1(LED-1)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "08-Jul-2005"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Mech Layer 1 removed."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "LED; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "LED-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=RLY_F(MOLEX KK 0022272021)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Colour"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.molex.com/pdm_docs/sd/022272021_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Digi-Key Listing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.digikey.com/product-search/en?keywords=22-27-2021"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Finish"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fastening Type"; Value = "Friction Lock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number Of Positions"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number Of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "9719"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0022272021"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.100" (2.54mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0.25"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "KK 6410"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4111-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Header, Unshrouded"; VariantName = "[No Variations]"
+Added Component: Designator=U4(DBV0005A_L)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "3-State Output"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Bits(#)"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "SCES222O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "F @ Nom Voltage(Max)(Mhz)"; Value = "150"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gate Type"; Value = "XOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Generic Part Number"; Value = "SN74LVC1G86"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ICC @ Nom Voltage(Max)(mA)"; Value = "0.01"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Type"; Value = "CMOS/TTL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Logic"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range(C)"; Value = "-40 to 125,-40 to 85"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Drive (IOL/IOH)(Max)(mA)"; Value = "32/-32"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Type"; Value = "CMOS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "DBV0005A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rating"; Value = "Catalog"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Schmitt Trigger"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Sub-Family"; Value = "XOR Gate"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology Family"; Value = "LVC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "tpd @ Nom Voltage(Max)(ns)"; Value = "9.9,5.5,5,4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VCC(Max)(V)"; Value = "5.5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VCC(Min)(V)"; Value = "1.65"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage(Nom)(V)"; Value = "1.8,2.5,3.3,5"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5_OUT Pin=C13-1
+Added Pin To Net: NetName=GND_Out Pin=C13-2
+Added Pin To Net: NetName=+5_OUT Pin=K1-12
+Added Pin To Net: NetName=GND_Out Pin=RLOK1-2
+Added Pin To Net: NetName=GND Pin=RLY_F-1
+Added Pin To Net: NetName=NetIC2_6 Pin=RLY_F-2
+Added Pin To Net: NetName=NetIC2_11 Pin=U4-2
+Added Pin To Net: NetName=GND_Out Pin=U4-3
+Added Pin To Net: NetName=+5_OUT Pin=U4-5
+Change Net Name : Old Net Name=NetIC1_1 New Net Name=ON/OFF_ISO
+Change Net Name : Old Net Name=NetIC2_11 New Net Name=RLY2
+Added Pin To Net: NetName=NetR14_1 Pin=R14-1
+Added Pin To Net: NetName=NetR14_1 Pin=RLOK1-1
+Added Net: Name=NetR14_1
+Added Pin To Net: NetName=RLY1 Pin=K1-22
+Added Pin To Net: NetName=RLY1 Pin=R14-2
+Added Pin To Net: NetName=RLY1 Pin=U4-1
+Added Net: Name=RLY1
+Added Pin To Net: NetName=RLYFAULT Pin=IC2-11
+Added Pin To Net: NetName=RLYFAULT Pin=U4-4
+Added Net: Name=RLYFAULT
+Added Member To Class: ClassName=U_IonValveCtrl Member=Component C13 0.1uF
+Added Member To Class: ClassName=U_IonValveCtrl Member=Component R14 620
+Added Member To Class: ClassName=U_IonValveCtrl Member=Component RLOK1 LED1
+Added Member To Class: ClassName=U_IonValveCtrl Member=Component RLY_F 0022272021
+Added Member To Class: ClassName=U_IonValveCtrl Member=Component U4 SN74LVC1G86DBVR

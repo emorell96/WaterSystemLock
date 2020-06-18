@@ -1,0 +1,379 @@
+Removed Pin From Net: NetName=RTD_GND1 Pin=C1A-2
+Removed Pin From Net: NetName=RTD_GND2 Pin=C1C-2
+Removed Pin From Net: NetName=RTD_GND3 Pin=C1E-2
+Removed Pin From Net: NetName=RTD_GND4 Pin=C1G-2
+Removed Pin From Net: NetName=RTD_GND5 Pin=C1I-2
+Removed Pin From Net: NetName=RTD_GND6 Pin=C1K-2
+Removed Pin From Net: NetName=RTD_GND1 Pin=C2A-1
+Removed Pin From Net: NetName=RTD_GND2 Pin=C2C-1
+Removed Pin From Net: NetName=RTD_GND3 Pin=C2E-1
+Removed Pin From Net: NetName=RTD_GND4 Pin=C2G-1
+Removed Pin From Net: NetName=RTD_GND5 Pin=C2I-1
+Removed Pin From Net: NetName=RTD_GND6 Pin=C2K-1
+Removed Pin From Net: NetName=RTD_GND1 Pin=J1A-1
+Removed Pin From Net: NetName=RTD_GND1 Pin=J1A-7
+Removed Pin From Net: NetName=RTD_GND1 Pin=J1A-8
+Removed Pin From Net: NetName=RTD_GND2 Pin=J1B-1
+Removed Pin From Net: NetName=RTD_GND2 Pin=J1B-7
+Removed Pin From Net: NetName=RTD_GND2 Pin=J1B-8
+Removed Pin From Net: NetName=RTD_GND3 Pin=J1C-1
+Removed Pin From Net: NetName=RTD_GND3 Pin=J1C-7
+Removed Pin From Net: NetName=RTD_GND3 Pin=J1C-8
+Removed Pin From Net: NetName=RTD_GND4 Pin=J1D-1
+Removed Pin From Net: NetName=RTD_GND4 Pin=J1D-7
+Removed Pin From Net: NetName=RTD_GND4 Pin=J1D-8
+Removed Pin From Net: NetName=RTD_GND5 Pin=J1E-1
+Removed Pin From Net: NetName=RTD_GND5 Pin=J1E-7
+Removed Pin From Net: NetName=RTD_GND5 Pin=J1E-8
+Removed Pin From Net: NetName=RTD_GND6 Pin=J1F-1
+Removed Pin From Net: NetName=RTD_GND6 Pin=J1F-7
+Removed Pin From Net: NetName=RTD_GND6 Pin=J1F-8
+Removed Pin From Net: NetName=RTD-8 Pin=J1H-2
+Removed Pin From Net: NetName=RTD+8 Pin=J1H-3
+Removed Pin From Net: NetName=RTD-10 Pin=J1J-2
+Removed Pin From Net: NetName=RTD+10 Pin=J1J-3
+Removed Pin From Net: NetName=RTD-11 Pin=J1K-2
+Removed Pin From Net: NetName=RTD+11 Pin=J1K-3
+Removed Pin From Net: NetName=+5 Pin=J1K-4
+Removed Pin From Net: NetName=RTD-1 Pin=R4A-1
+Removed Pin From Net: NetName=RTD-2 Pin=R4C-1
+Removed Pin From Net: NetName=RTD-3 Pin=R4E-1
+Removed Pin From Net: NetName=RTD-4 Pin=R4G-1
+Removed Pin From Net: NetName=RTD-5 Pin=R4I-1
+Removed Pin From Net: NetName=RTD-6 Pin=R4K-1
+Removed Pin From Net: NetName=RTD-1 Pin=R5A-1
+Removed Pin From Net: NetName=RTD-2 Pin=R5C-1
+Removed Pin From Net: NetName=RTD-3 Pin=R5E-1
+Removed Pin From Net: NetName=RTD-4 Pin=R5G-1
+Removed Pin From Net: NetName=RTD-5 Pin=R5I-1
+Removed Pin From Net: NetName=RTD-6 Pin=R5K-1
+Removed Pin From Net: NetName=+5 Pin=R6K-1
+Removed Pin From Net: NetName=GND Pin=R7K-1
+Removed Pin From Net: NetName=RTD_GND1 Pin=U1A-6
+Removed Pin From Net: NetName=RTD_GND2 Pin=U1C-6
+Removed Pin From Net: NetName=RTD_GND3 Pin=U1E-6
+Removed Pin From Net: NetName=RTD_GND4 Pin=U1G-6
+Removed Pin From Net: NetName=RTD_GND5 Pin=U1I-6
+Removed Pin From Net: NetName=RTD_GND6 Pin=U1K-6
+Change Component Designator: OldDesignator=J1H NewDesignator=J1J
+Change Component Designator: OldDesignator=J1J NewDesignator=J1K
+Change Component Designator: OldDesignator=R6H NewDesignator=R6J
+Change Component Designator: OldDesignator=R6J NewDesignator=R6K
+Change Component Designator: OldDesignator=R7H NewDesignator=R7J
+Change Component Designator: OldDesignator=R7J NewDesignator=R7K
+Change Component Designator: OldDesignator=R27H NewDesignator=R27J
+Change Component Designator: OldDesignator=R27J NewDesignator=R27K
+Change Component Designator: OldDesignator=R28H NewDesignator=R28J
+Change Component Designator: OldDesignator=R28J NewDesignator=R28K
+Added Component: Designator=J1H(CUI-SJ-3506-SMT-TR_V)
+Add component (AddParameter): Name = "Case/Package"; Value = "Axial"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.cui.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.cui.com/product/resource/sj-3506-smt.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "7 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev. 1.01, 11/2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Diameter"; Value = "3.6 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "3.6 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Impedance"; Value = "50 Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Female Mid Mount Audio Jack, 6 Position, Height 2.55 mm, Tail Length 2 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SJ-3506-SMT-TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHSCompliant"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "3.6 mm"; VariantName = "[No Variations]"
+Added Component: Designator=R6H(RES 0805/2012)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ6ENF1582V+7+WW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Digi-Key listing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://digikey.com/product-detail/en/ERJ-6ENF1582V/P15.8KCTR-ND/6419"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Package"; Value = "0805 (2012 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic Electronic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-6ENF1582V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "2101"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PowerRating"; Value = "0.125W, 1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0.0073"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P15.8KCTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TemperatureCoefficient"; Value = "100ppm/C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TemperatureRange"; Value = "-55C ~ 155C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Thick Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "15.8k"; VariantName = "[No Variations]"
+Added Component: Designator=R7H(RES 0805/2012)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0002+ERJ6ENF1582V+7+WW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Digi-Key listing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://digikey.com/product-detail/en/ERJ-6ENF1582V/P15.8KCTR-ND/6419"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Package"; Value = "0805 (2012 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic Electronic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-6ENF1582V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "2101"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PowerRating"; Value = "0.125W, 1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0.0073"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P15.8KCTR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TemperatureCoefficient"; Value = "100ppm/C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TemperatureRange"; Value = "-55C ~ 155C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Thick Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "15.8k"; VariantName = "[No Variations]"
+Added Component: Designator=R27H(RES 1206/3216)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0001+ERJ8GEY0R00V+7+WW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Digi-Key Listing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-8GEY0R00V/P0.0ETR-ND/27495"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Package"; Value = "1206 (3216 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic Electronic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-8GEY0R00V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "16165"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PowerRating"; Value = "0.25W, 1/4W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0.0067"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P0.0ETR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TemperatureRange"; Value = "-55C ~ 155C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "Jumper"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.0"; VariantName = "[No Variations]"
+Added Component: Designator=R28H(RES 1206/3216)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+AOA0001+ERJ8GEY0R00V+7+WW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Digi-Key Listing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-8GEY0R00V/P0.0ETR-ND/27495"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device Package"; Value = "1206 (3216 Metric)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Panasonic Electronic Components"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "ERJ-8GEY0R00V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "16165"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PowerRating"; Value = "0.25W, 1/4W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0.0067"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "P0.0ETR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TemperatureRange"; Value = "-55C ~ 155C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "Jumper"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.0"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=RTD_GND7 Pin=C1A-2
+Added Pin To Net: NetName=RTD_GND9 Pin=C1E-2
+Added Pin To Net: NetName=RTD_GND8 Pin=C1G-2
+Added Pin To Net: NetName=RTD_GND10 Pin=C1I-2
+Added Pin To Net: NetName=RTD_GND12 Pin=C1K-2
+Added Pin To Net: NetName=RTD_GND7 Pin=C2A-1
+Added Pin To Net: NetName=RTD_GND9 Pin=C2E-1
+Added Pin To Net: NetName=RTD_GND8 Pin=C2G-1
+Added Pin To Net: NetName=RTD_GND10 Pin=C2I-1
+Added Pin To Net: NetName=RTD_GND12 Pin=C2K-1
+Added Pin To Net: NetName=RTD_GND1 Pin=J1A-3
+Added Pin To Net: NetName=RTD_GND2 Pin=J1B-3
+Added Pin To Net: NetName=RTD_GND3 Pin=J1C-3
+Added Pin To Net: NetName=RTD_GND4 Pin=J1D-3
+Added Pin To Net: NetName=RTD_GND5 Pin=J1E-3
+Added Pin To Net: NetName=RTD_GND6 Pin=J1F-3
+Added Pin To Net: NetName=RTD-8 Pin=J1H-2
+Added Pin To Net: NetName=RTD+8 Pin=J1H-3
+Added Pin To Net: NetName=+5 Pin=J1H-4
+Added Pin To Net: NetName=RTD-10 Pin=J1J-2
+Added Pin To Net: NetName=RTD+10 Pin=J1J-3
+Added Pin To Net: NetName=RTD-11 Pin=J1K-2
+Added Pin To Net: NetName=RTD+11 Pin=J1K-3
+Added Pin To Net: NetName=RTD+7 Pin=R2A-1
+Added Pin To Net: NetName=RTD+8 Pin=R2C-1
+Added Pin To Net: NetName=RTD+9 Pin=R2E-1
+Added Pin To Net: NetName=RTD+10 Pin=R2G-1
+Added Pin To Net: NetName=RTD+11 Pin=R2I-1
+Added Pin To Net: NetName=RTD+12 Pin=R2K-1
+Added Pin To Net: NetName=RTD-7 Pin=R4A-1
+Added Pin To Net: NetName=RTD-8 Pin=R4C-1
+Added Pin To Net: NetName=RTD-9 Pin=R4E-1
+Added Pin To Net: NetName=RTD-10 Pin=R4G-1
+Added Pin To Net: NetName=RTD-11 Pin=R4I-1
+Added Pin To Net: NetName=RTD-12 Pin=R4K-1
+Added Pin To Net: NetName=RTD-7 Pin=R5A-1
+Added Pin To Net: NetName=RTD-8 Pin=R5C-1
+Added Pin To Net: NetName=RTD-9 Pin=R5E-1
+Added Pin To Net: NetName=RTD-10 Pin=R5G-1
+Added Pin To Net: NetName=RTD-11 Pin=R5I-1
+Added Pin To Net: NetName=RTD-12 Pin=R5K-1
+Added Pin To Net: NetName=+5 Pin=R6H-1
+Added Pin To Net: NetName=GND Pin=R7H-1
+Added Pin To Net: NetName=RTD+7 Pin=U1A-4
+Added Pin To Net: NetName=RTD_GND7 Pin=U1A-6
+Added Pin To Net: NetName=RTD+8 Pin=U1C-4
+Added Pin To Net: NetName=RTD+9 Pin=U1E-4
+Added Pin To Net: NetName=RTD_GND9 Pin=U1E-6
+Added Pin To Net: NetName=RTD+10 Pin=U1G-4
+Added Pin To Net: NetName=RTD_GND8 Pin=U1G-6
+Added Pin To Net: NetName=RTD+11 Pin=U1I-4
+Added Pin To Net: NetName=RTD_GND10 Pin=U1I-6
+Added Pin To Net: NetName=RTD+12 Pin=U1K-4
+Added Pin To Net: NetName=RTD_GND12 Pin=U1K-6
+Change Net Name : Old Net Name=CONNGD+7 New Net Name=CONNGDR+1
+Change Net Name : Old Net Name=CONNGD+9 New Net Name=CONNGDR+3
+Change Net Name : Old Net Name=CONNGD+12 New Net Name=CONNGDR+6
+Change Net Name : Old Net Name=CONNGD-1 New Net Name=CONNGDL-1
+Change Net Name : Old Net Name=CONNGD-2 New Net Name=CONNGDL-2
+Change Net Name : Old Net Name=CONNGD-3 New Net Name=CONNGDL-3
+Change Net Name : Old Net Name=CONNGD-4 New Net Name=CONNGDL-4
+Change Net Name : Old Net Name=CONNGD-5 New Net Name=CONNGDL-5
+Change Net Name : Old Net Name=CONNGD-6 New Net Name=CONNGDL-6
+Change Net Name : Old Net Name=NetJ1H_5 New Net Name=NetJ1J_5
+Change Net Name : Old Net Name=NetJ1H_6 New Net Name=NetJ1J_6
+Change Net Name : Old Net Name=NetJ1J_5 New Net Name=NetJ1K_5
+Change Net Name : Old Net Name=NetJ1J_6 New Net Name=NetJ1K_6
+Change Net Name : Old Net Name=RTD+7 New Net Name=RTDR+1
+Change Net Name : Old Net Name=RTD+8 New Net Name=RTDR+2
+Change Net Name : Old Net Name=RTD+9 New Net Name=RTDR+3
+Change Net Name : Old Net Name=RTD+10 New Net Name=RTDR+4
+Change Net Name : Old Net Name=RTD+11 New Net Name=RTDR+5
+Change Net Name : Old Net Name=RTD+12 New Net Name=RTDR+6
+Change Net Name : Old Net Name=RTD-1 New Net Name=RTDL-1
+Change Net Name : Old Net Name=RTD-2 New Net Name=RTDL-2
+Change Net Name : Old Net Name=RTD-3 New Net Name=RTDL-3
+Change Net Name : Old Net Name=RTD-4 New Net Name=RTDL-4
+Change Net Name : Old Net Name=RTD-5 New Net Name=RTDL-5
+Change Net Name : Old Net Name=RTD-6 New Net Name=RTDL-6
+Change Net Name : Old Net Name=RTD-7 New Net Name=RTDR-1
+Change Net Name : Old Net Name=RTD-8 New Net Name=RTDR-2
+Change Net Name : Old Net Name=RTD-9 New Net Name=RTDR-3
+Change Net Name : Old Net Name=RTD-10 New Net Name=RTDR-4
+Change Net Name : Old Net Name=RTD-11 New Net Name=RTDR-5
+Change Net Name : Old Net Name=RTD-12 New Net Name=RTDR-6
+Change Net Name : Old Net Name=RTD_GND1 New Net Name=RTDL+1
+Change Net Name : Old Net Name=RTD_GND2 New Net Name=RTDL+2
+Change Net Name : Old Net Name=RTD_GND3 New Net Name=RTDL+3
+Change Net Name : Old Net Name=RTD_GND4 New Net Name=RTDL+4
+Change Net Name : Old Net Name=RTD_GND5 New Net Name=RTDL+5
+Change Net Name : Old Net Name=RTD_GND6 New Net Name=RTDL+6
+Change Net Name : Old Net Name=RTD_GND7 New Net Name=RTDR_GND1
+Change Net Name : Old Net Name=RTD_GND8 New Net Name=RTDR_GND4
+Change Net Name : Old Net Name=RTD_GND9 New Net Name=RTDR_GND3
+Change Net Name : Old Net Name=RTD_GND10 New Net Name=RTDR_GND5
+Change Net Name : Old Net Name=RTD_GND12 New Net Name=RTDR_GND6
+Added Pin To Net: NetName=CONNGDL+1 Pin=IC2B-5
+Added Pin To Net: NetName=CONNGDL+1 Pin=R28A-2
+Added Net: Name=CONNGDL+1
+Added Pin To Net: NetName=CONNGDL+2 Pin=IC2B-6
+Added Pin To Net: NetName=CONNGDL+2 Pin=R28B-2
+Added Net: Name=CONNGDL+2
+Added Pin To Net: NetName=CONNGDL+3 Pin=IC3B-3
+Added Pin To Net: NetName=CONNGDL+3 Pin=R28C-2
+Added Net: Name=CONNGDL+3
+Added Pin To Net: NetName=CONNGDL+4 Pin=IC3B-4
+Added Pin To Net: NetName=CONNGDL+4 Pin=R28D-2
+Added Net: Name=CONNGDL+4
+Added Pin To Net: NetName=CONNGDL+5 Pin=IC3B-5
+Added Pin To Net: NetName=CONNGDL+5 Pin=R28E-2
+Added Net: Name=CONNGDL+5
+Added Pin To Net: NetName=CONNGDL+6 Pin=IC3B-6
+Added Pin To Net: NetName=CONNGDL+6 Pin=R28F-2
+Added Net: Name=CONNGDL+6
+Added Pin To Net: NetName=CONNGDR+2 Pin=IC2A-6
+Added Pin To Net: NetName=CONNGDR+2 Pin=R28H-2
+Added Net: Name=CONNGDR+2
+Added Pin To Net: NetName=CONNGDR+4 Pin=IC3A-4
+Added Pin To Net: NetName=CONNGDR+4 Pin=R28J-2
+Added Net: Name=CONNGDR+4
+Added Pin To Net: NetName=CONNGDR+5 Pin=IC3A-5
+Added Pin To Net: NetName=CONNGDR+5 Pin=R28K-2
+Added Net: Name=CONNGDR+5
+Added Pin To Net: NetName=CONNGDR-1 Pin=IC1A-3
+Added Pin To Net: NetName=CONNGDR-1 Pin=R27G-2
+Added Net: Name=CONNGDR-1
+Added Pin To Net: NetName=CONNGDR-2 Pin=IC1A-4
+Added Pin To Net: NetName=CONNGDR-2 Pin=R27H-2
+Added Net: Name=CONNGDR-2
+Added Pin To Net: NetName=CONNGDR-3 Pin=IC1A-5
+Added Pin To Net: NetName=CONNGDR-3 Pin=R27I-2
+Added Net: Name=CONNGDR-3
+Added Pin To Net: NetName=CONNGDR-4 Pin=IC1A-6
+Added Pin To Net: NetName=CONNGDR-4 Pin=R27J-2
+Added Net: Name=CONNGDR-4
+Added Pin To Net: NetName=CONNGDR-5 Pin=IC2A-3
+Added Pin To Net: NetName=CONNGDR-5 Pin=R27K-2
+Added Net: Name=CONNGDR-5
+Added Pin To Net: NetName=CONNGDR-6 Pin=IC2A-4
+Added Pin To Net: NetName=CONNGDR-6 Pin=R27L-2
+Added Net: Name=CONNGDR-6
+Added Pin To Net: NetName=NetJ1H_5 Pin=J1H-5
+Added Pin To Net: NetName=NetJ1H_5 Pin=R7H-2
+Added Pin To Net: NetName=NetJ1H_5 Pin=R28H-1
+Added Net: Name=NetJ1H_5
+Added Pin To Net: NetName=NetJ1H_6 Pin=J1H-6
+Added Pin To Net: NetName=NetJ1H_6 Pin=R6H-2
+Added Pin To Net: NetName=NetJ1H_6 Pin=R27H-1
+Added Net: Name=NetJ1H_6
+Added Pin To Net: NetName=RTDL_GND1 Pin=J1A-1
+Added Pin To Net: NetName=RTDL_GND1 Pin=J1A-7
+Added Pin To Net: NetName=RTDL_GND1 Pin=J1A-8
+Added Pin To Net: NetName=RTDL_GND1 Pin=R2B-1
+Added Pin To Net: NetName=RTDL_GND1 Pin=U1B-4
+Added Net: Name=RTDL_GND1
+Added Pin To Net: NetName=RTDL_GND2 Pin=J1B-1
+Added Pin To Net: NetName=RTDL_GND2 Pin=J1B-7
+Added Pin To Net: NetName=RTDL_GND2 Pin=J1B-8
+Added Pin To Net: NetName=RTDL_GND2 Pin=R2D-1
+Added Pin To Net: NetName=RTDL_GND2 Pin=U1D-4
+Added Net: Name=RTDL_GND2
+Added Pin To Net: NetName=RTDL_GND3 Pin=J1C-1
+Added Pin To Net: NetName=RTDL_GND3 Pin=J1C-7
+Added Pin To Net: NetName=RTDL_GND3 Pin=J1C-8
+Added Pin To Net: NetName=RTDL_GND3 Pin=R2F-1
+Added Pin To Net: NetName=RTDL_GND3 Pin=U1F-4
+Added Net: Name=RTDL_GND3
+Added Pin To Net: NetName=RTDL_GND4 Pin=J1D-1
+Added Pin To Net: NetName=RTDL_GND4 Pin=J1D-7
+Added Pin To Net: NetName=RTDL_GND4 Pin=J1D-8
+Added Pin To Net: NetName=RTDL_GND4 Pin=R2H-1
+Added Pin To Net: NetName=RTDL_GND4 Pin=U1H-4
+Added Net: Name=RTDL_GND4
+Added Pin To Net: NetName=RTDL_GND5 Pin=J1E-1
+Added Pin To Net: NetName=RTDL_GND5 Pin=J1E-7
+Added Pin To Net: NetName=RTDL_GND5 Pin=J1E-8
+Added Pin To Net: NetName=RTDL_GND5 Pin=R2J-1
+Added Pin To Net: NetName=RTDL_GND5 Pin=U1J-4
+Added Net: Name=RTDL_GND5
+Added Pin To Net: NetName=RTDL_GND6 Pin=J1F-1
+Added Pin To Net: NetName=RTDL_GND6 Pin=J1F-7
+Added Pin To Net: NetName=RTDL_GND6 Pin=J1F-8
+Added Pin To Net: NetName=RTDL_GND6 Pin=R2L-1
+Added Pin To Net: NetName=RTDL_GND6 Pin=U1L-4
+Added Net: Name=RTDL_GND6
+Added Pin To Net: NetName=RTDR_GND2 Pin=C1C-2
+Added Pin To Net: NetName=RTDR_GND2 Pin=C2C-1
+Added Pin To Net: NetName=RTDR_GND2 Pin=J1H-1
+Added Pin To Net: NetName=RTDR_GND2 Pin=J1H-7
+Added Pin To Net: NetName=RTDR_GND2 Pin=J1H-8
+Added Pin To Net: NetName=RTDR_GND2 Pin=U1C-6
+Added Net: Name=RTDR_GND2
+Change Class Name : Old Net Name=U_ConnectorSchA New Net Name=U_ConnectorSchLA
+Change Class Name : Old Net Name=U_ConnectorSchB New Net Name=U_ConnectorSchLB
+Change Class Name : Old Net Name=U_ConnectorSchC New Net Name=U_ConnectorSchLC
+Change Class Name : Old Net Name=U_ConnectorSchD New Net Name=U_ConnectorSchLD
+Change Class Name : Old Net Name=U_ConnectorSchE New Net Name=U_ConnectorSchLE
+Change Class Name : Old Net Name=U_ConnectorSchF New Net Name=U_ConnectorSchLF
+Change Class Name : Old Net Name=U_ConnectorSchG New Net Name=U_ConnectorSchRA
+Change Class Name : Old Net Name=U_ConnectorSchH New Net Name=U_ConnectorSchRB
+Change Class Name : Old Net Name=U_ConnectorSchI New Net Name=U_ConnectorSchRC
+Change Class Name : Old Net Name=U_ConnectorSchJ New Net Name=U_ConnectorSchRD
+Change Class Name : Old Net Name=U_ConnectorSchK New Net Name=U_ConnectorSchRE
+Change Class Name : Old Net Name=U_ConnectorSchL New Net Name=U_ConnectorSchRF
+Added Class: Name=CONNGDL+[1..6]
+Added Class: Name=CONNGDL-[1..6]
+Added Class: Name=CONNGDR+[1..6]
+Added Class: Name=CONNGDR-[1..6]
+Added Room: Name=U_ConnectorSchLA
+Added Room: Name=U_ConnectorSchLB
+Added Room: Name=U_ConnectorSchLC
+Added Room: Name=U_ConnectorSchLD
+Added Room: Name=U_ConnectorSchLE
+Added Room: Name=U_ConnectorSchLF
+Added Room: Name=U_ConnectorSchRA
+Added Room: Name=U_ConnectorSchRB
+Added Room: Name=U_ConnectorSchRC
+Added Room: Name=U_ConnectorSchRD
+Added Room: Name=U_ConnectorSchRE
+Added Room: Name=U_ConnectorSchRF

@@ -1,0 +1,90 @@
+Change Component Parameter Comment in C20 Old= New==Value
+Change Component Parameter Comment in C19 Old= New==Value
+Change Component Parameter Comment in C18 Old= New==Value
+Change Component Parameter Comment in C17 Old= New==Value
+Change Component Parameter Comment in C16 Old= New==Value
+Change Component Parameter Comment in C15 Old= New==Value
+Change Value of Parameter ComponentLink1URL in Part C20 Old=http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf New=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU
+Change Value of Parameter ComponentLink1URL in Part C19 Old=http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf New=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU
+Change Value of Parameter ComponentLink1URL in Part C18 Old=http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf New=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU
+Change Value of Parameter ComponentLink1URL in Part C17 Old=http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf New=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU
+Change Value of Parameter ComponentLink1URL in Part C16 Old=http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf New=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU
+Change Value of Parameter ComponentLink1URL in Part C15 Old=http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf New=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU
+Change Value of Parameter ComponentLink2Description in Part C20 Old=Digi-Key Listing New=Digi-Key listing
+Change Value of Parameter ComponentLink2Description in Part C19 Old=Digi-Key Listing New=Digi-Key listing
+Change Value of Parameter ComponentLink2Description in Part C18 Old=Digi-Key Listing New=Digi-Key listing
+Change Value of Parameter ComponentLink2Description in Part C17 Old=Digi-Key Listing New=Digi-Key listing
+Change Value of Parameter ComponentLink2Description in Part C16 Old=Digi-Key Listing New=Digi-Key listing
+Change Value of Parameter ComponentLink2Description in Part C15 Old=Digi-Key Listing New=Digi-Key listing
+Change Value of Parameter ComponentLink2URL in Part C20 Old=https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM155R71C104JA88D/490-6327-2-ND/2610891 New=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735
+Change Value of Parameter ComponentLink2URL in Part C19 Old=https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM155R71C104JA88D/490-6327-2-ND/2610891 New=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735
+Change Value of Parameter ComponentLink2URL in Part C18 Old=https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM155R71C104JA88D/490-6327-2-ND/2610891 New=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735
+Change Value of Parameter ComponentLink2URL in Part C17 Old=https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM155R71C104JA88D/490-6327-2-ND/2610891 New=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735
+Change Value of Parameter ComponentLink2URL in Part C16 Old=https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM155R71C104JA88D/490-6327-2-ND/2610891 New=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735
+Change Value of Parameter ComponentLink2URL in Part C15 Old=https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM155R71C104JA88D/490-6327-2-ND/2610891 New=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735
+Change Component Parameter Description in C20 Old=CAP CER 0.1UF 16V X7R 0402 New=CAP CER 0.1UF 25V X7R 0805
+Change Component Parameter Description in C19 Old=CAP CER 0.1UF 16V X7R 0402 New=CAP CER 0.1UF 25V X7R 0805
+Change Component Parameter Description in C18 Old=CAP CER 0.1UF 16V X7R 0402 New=CAP CER 0.1UF 25V X7R 0805
+Change Component Parameter Description in C17 Old=CAP CER 0.1UF 16V X7R 0402 New=CAP CER 0.1UF 25V X7R 0805
+Change Component Parameter Description in C16 Old=CAP CER 0.1UF 16V X7R 0402 New=CAP CER 0.1UF 25V X7R 0805
+Change Component Parameter Description in C15 Old=CAP CER 0.1UF 16V X7R 0402 New=CAP CER 0.1UF 25V X7R 0805
+Change Value of Parameter Device Package in Part C20 Old=0402 (1005 Metric) New=0805 (2012 Metric)
+Change Value of Parameter Device Package in Part C19 Old=0402 (1005 Metric) New=0805 (2012 Metric)
+Change Value of Parameter Device Package in Part C18 Old=0402 (1005 Metric) New=0805 (2012 Metric)
+Change Value of Parameter Device Package in Part C17 Old=0402 (1005 Metric) New=0805 (2012 Metric)
+Change Value of Parameter Device Package in Part C16 Old=0402 (1005 Metric) New=0805 (2012 Metric)
+Change Value of Parameter Device Package in Part C15 Old=0402 (1005 Metric) New=0805 (2012 Metric)
+Change Component Parameter Library Reference in C20 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Component Parameter Library Reference in C19 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Component Parameter Library Reference in C18 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Component Parameter Library Reference in C17 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Component Parameter Library Reference in C16 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Component Parameter Library Reference in C15 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Value of Parameter Manufacturer in Part C20 Old=Murata Electronics North America New=Kemet
+Change Value of Parameter Manufacturer in Part C19 Old=Murata Electronics North America New=Kemet
+Change Value of Parameter Manufacturer in Part C18 Old=Murata Electronics North America New=Kemet
+Change Value of Parameter Manufacturer in Part C17 Old=Murata Electronics North America New=Kemet
+Change Value of Parameter Manufacturer in Part C16 Old=Murata Electronics North America New=Kemet
+Change Value of Parameter Manufacturer in Part C15 Old=Murata Electronics North America New=Kemet
+Change Value of Parameter PartId in Part C20 Old=12366 New=6117
+Change Value of Parameter PartId in Part C19 Old=12366 New=6117
+Change Value of Parameter PartId in Part C18 Old=12366 New=6117
+Change Value of Parameter PartId in Part C17 Old=12366 New=6117
+Change Value of Parameter PartId in Part C16 Old=12366 New=6117
+Change Value of Parameter PartId in Part C15 Old=12366 New=6117
+Change Value of Parameter Part Number in Part C20 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Value of Parameter Part Number in Part C19 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Value of Parameter Part Number in Part C18 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Value of Parameter Part Number in Part C17 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Value of Parameter Part Number in Part C16 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Value of Parameter Part Number in Part C15 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Value of Parameter Price in Part C20 Old=0.0046 New=0.1549
+Change Value of Parameter Price in Part C19 Old=0.0046 New=0.1549
+Change Value of Parameter Price in Part C18 Old=0.0046 New=0.1549
+Change Value of Parameter Price in Part C17 Old=0.0046 New=0.1549
+Change Value of Parameter Price in Part C16 Old=0.0046 New=0.1549
+Change Value of Parameter Price in Part C15 Old=0.0046 New=0.1549
+Change Value of Parameter Supplier Part Number 1 in Part C20 Old=490-6327-2-ND New=399-7997-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C19 Old=490-6327-2-ND New=399-7997-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C18 Old=490-6327-2-ND New=399-7997-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C17 Old=490-6327-2-ND New=399-7997-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C16 Old=490-6327-2-ND New=399-7997-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C15 Old=490-6327-2-ND New=399-7997-2-ND
+Change Value of Parameter Value in Part C20 Old=0.10uF New=0.1uF
+Change Value of Parameter Value in Part C19 Old=0.10uF New=0.1uF
+Change Value of Parameter Value in Part C18 Old=0.10uF New=0.1uF
+Change Value of Parameter Value in Part C17 Old=0.10uF New=0.1uF
+Change Value of Parameter Value in Part C16 Old=0.10uF New=0.1uF
+Change Value of Parameter Value in Part C15 Old=0.10uF New=0.1uF
+Change Value of Parameter Voltage in Part C20 Old=16V New=25V
+Change Value of Parameter Voltage in Part C19 Old=16V New=25V
+Change Value of Parameter Voltage in Part C18 Old=16V New=25V
+Change Value of Parameter Voltage in Part C17 Old=16V New=25V
+Change Value of Parameter Voltage in Part C16 Old=16V New=25V
+Change Value of Parameter Voltage in Part C15 Old=16V New=25V
+Replace Part C15 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C16 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C17 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C18 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C19 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C20 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib

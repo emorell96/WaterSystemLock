@@ -1,0 +1,69 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\UHV Gate Valve Control\UHVValveCtrlv1.PcbDoc
+Date     : 2/25/2020
+Time     : 11:30:26 PM
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=1.016mm) (All),(InNetClass('AC'))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=1.27mm) (Preferred=0.508mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=1.02mm) (Max=5.08mm) (Preferred=2.54mm) (InNetClass('AC'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.254mm) (Max=4mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Room U_Logic (Bounding Region = (49.276mm, 42.926mm, 64.262mm, 56.134mm) (InComponentClass('U_Logic'))
+Rule Violations :0
+
+Processing Rule : Room U_IonValveCtrl (Bounding Region = (67.31mm, 25.146mm, 160.274mm, 68.58mm) (InComponentClass('U_IonValveCtrl'))
+Rule Violations :0
+
+Processing Rule : Room U_AnalogPressure (Bounding Region = (38.847mm, 54.47mm, 71.197mm, 70.876mm) (InComponentClass('U_AnalogPressure'))
+Rule Violations :0
+
+Processing Rule : Room U_FlipFlop (Bounding Region = (54.987mm, 17.936mm, 76.259mm, 52.575mm) (InComponentClass('U_FlipFlop'))
+Rule Violations :0
+
+Processing Rule : Room U_InputConnectors (Bounding Region = (28.056mm, 27.862mm, 55.556mm, 70.515mm) (InComponentClass('U_InputConnectors'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Waived Violations : 0
+Time Elapsed        : 00:00:00

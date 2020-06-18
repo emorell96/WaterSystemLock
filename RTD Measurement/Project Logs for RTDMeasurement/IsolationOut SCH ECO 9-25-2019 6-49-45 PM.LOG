@@ -1,0 +1,66 @@
+Change Component Parameter Comment in C20 Old= New==Value
+Change Component Parameter Comment in C19 Old= New==Value
+Change Component Parameter Comment in C18 Old= New==Value
+Change Component Parameter Comment in C17 Old= New==Value
+Change Component Parameter Comment in C16 Old= New==Value
+Change Component Parameter Comment in C15 Old= New==Value
+Change Value of Parameter ComponentLink1URL in Part C20 Old=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU New=http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104KACNNNC.jsp
+Change Value of Parameter ComponentLink1URL in Part C19 Old=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU New=http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104KACNNNC.jsp
+Change Value of Parameter ComponentLink1URL in Part C18 Old=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU New=http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104KACNNNC.jsp
+Change Value of Parameter ComponentLink1URL in Part C17 Old=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU New=http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104KACNNNC.jsp
+Change Value of Parameter ComponentLink1URL in Part C16 Old=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU New=http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104KACNNNC.jsp
+Change Value of Parameter ComponentLink1URL in Part C15 Old=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU New=http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104KACNNNC.jsp
+Change Value of Parameter ComponentLink2URL in Part C20 Old=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735 New=http://digikey.com/product-detail/en/CL21B104KACNNNC/1276-1099-2-ND/3886757
+Change Value of Parameter ComponentLink2URL in Part C19 Old=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735 New=http://digikey.com/product-detail/en/CL21B104KACNNNC/1276-1099-2-ND/3886757
+Change Value of Parameter ComponentLink2URL in Part C18 Old=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735 New=http://digikey.com/product-detail/en/CL21B104KACNNNC/1276-1099-2-ND/3886757
+Change Value of Parameter ComponentLink2URL in Part C17 Old=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735 New=http://digikey.com/product-detail/en/CL21B104KACNNNC/1276-1099-2-ND/3886757
+Change Value of Parameter ComponentLink2URL in Part C16 Old=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735 New=http://digikey.com/product-detail/en/CL21B104KACNNNC/1276-1099-2-ND/3886757
+Change Value of Parameter ComponentLink2URL in Part C15 Old=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735 New=http://digikey.com/product-detail/en/CL21B104KACNNNC/1276-1099-2-ND/3886757
+Change Component Parameter Library Reference in C20 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Component Parameter Library Reference in C19 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Component Parameter Library Reference in C18 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Component Parameter Library Reference in C17 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Component Parameter Library Reference in C16 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Component Parameter Library Reference in C15 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Value of Parameter Manufacturer in Part C20 Old=Kemet New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter Manufacturer in Part C19 Old=Kemet New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter Manufacturer in Part C18 Old=Kemet New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter Manufacturer in Part C17 Old=Kemet New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter Manufacturer in Part C16 Old=Kemet New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter Manufacturer in Part C15 Old=Kemet New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter PartId in Part C20 Old=6117 New=5699
+Change Value of Parameter PartId in Part C19 Old=6117 New=5699
+Change Value of Parameter PartId in Part C18 Old=6117 New=5699
+Change Value of Parameter PartId in Part C17 Old=6117 New=5699
+Change Value of Parameter PartId in Part C16 Old=6117 New=5699
+Change Value of Parameter PartId in Part C15 Old=6117 New=5699
+Change Value of Parameter Part Number in Part C20 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Value of Parameter Part Number in Part C19 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Value of Parameter Part Number in Part C18 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Value of Parameter Part Number in Part C17 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Value of Parameter Part Number in Part C16 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Value of Parameter Part Number in Part C15 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Value of Parameter Price in Part C20 Old=0.1549 New=0.0099
+Change Value of Parameter Price in Part C19 Old=0.1549 New=0.0099
+Change Value of Parameter Price in Part C18 Old=0.1549 New=0.0099
+Change Value of Parameter Price in Part C17 Old=0.1549 New=0.0099
+Change Value of Parameter Price in Part C16 Old=0.1549 New=0.0099
+Change Value of Parameter Price in Part C15 Old=0.1549 New=0.0099
+Change Value of Parameter Supplier Part Number 1 in Part C20 Old=399-7997-2-ND New=1276-1099-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C19 Old=399-7997-2-ND New=1276-1099-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C18 Old=399-7997-2-ND New=1276-1099-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C17 Old=399-7997-2-ND New=1276-1099-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C16 Old=399-7997-2-ND New=1276-1099-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C15 Old=399-7997-2-ND New=1276-1099-2-ND
+Change Value of Parameter Tolerance in Part C20 Old=5% New=10%
+Change Value of Parameter Tolerance in Part C19 Old=5% New=10%
+Change Value of Parameter Tolerance in Part C18 Old=5% New=10%
+Change Value of Parameter Tolerance in Part C17 Old=5% New=10%
+Change Value of Parameter Tolerance in Part C16 Old=5% New=10%
+Change Value of Parameter Tolerance in Part C15 Old=5% New=10%
+Replace Part C15 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C16 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C17 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C18 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C19 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C20 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\IsolationOut.SchDoc with Capacitor from Celestial Library Database.DbLib

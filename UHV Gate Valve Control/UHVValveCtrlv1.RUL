@@ -1,0 +1,7 @@
+DRC Rules Export File for PCB: C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\UHV Gate Valve Control\UHVValveCtrlv1.PcbDoc
+RuleKind=Clearance|RuleName=Clearance_1|Scope=Board|Minimum=40.00
+RuleKind=Width|RuleName=Width_1|Scope=Board|Minimum=40.16
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=6.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

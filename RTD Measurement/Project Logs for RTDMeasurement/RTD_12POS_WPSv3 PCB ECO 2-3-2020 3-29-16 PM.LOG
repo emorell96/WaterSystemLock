@@ -1,0 +1,7 @@
+Change Class Name : Old Net Name=U_ComparisonSchA New Net Name=U_ComparisonSchG
+Change Class Name : Old Net Name=U_ConnectorSchA New Net Name=U_ConnectorSchG
+Change Class Name : Old Net Name=U_RTDAnalogA New Net Name=U_RTDAnalogG
+Change Room Name: Old Name=U_RTDAnalogA New Name=U_RTDAnalogG
+Change Room Scope: Old Scope=InComponentClass('U_RTDAnalogA') New Scope=InComponentClass('U_RTDAnalogG')
+Added Room: Name=U_ComparisonSchG
+Added Room: Name=U_ConnectorSchG

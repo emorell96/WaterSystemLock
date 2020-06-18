@@ -1,0 +1,30 @@
+Change Component Parameter Comment in C42 Old= New==Value
+Change Component Parameter Comment in C41 Old= New==Value
+Change Value of Parameter ComponentLink1URL in Part C42 Old=http://www.kemet.com/docfinder?Partnumber=C1206C226M8RACTU New=//media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL31A226KAHNNNE_Spec.pdf
+Change Value of Parameter ComponentLink1URL in Part C41 Old=http://www.kemet.com/docfinder?Partnumber=C1206C226M8RACTU New=//media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL31A226KAHNNNE_Spec.pdf
+Change Value of Parameter ComponentLink2URL in Part C42 Old=https://www.digikey.com/product-detail/en/kemet/C1206C226M8RACTU/399-7444-2-ND/3317650 New=https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CL31A226KAHNNNE/1276-3047-2-ND/3888705
+Change Value of Parameter ComponentLink2URL in Part C41 Old=https://www.digikey.com/product-detail/en/kemet/C1206C226M8RACTU/399-7444-2-ND/3317650 New=https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CL31A226KAHNNNE/1276-3047-2-ND/3888705
+Change Component Parameter Description in C42 Old=CAP CER 22UF 10V X7R 1206 New=CAP CER 22UF 25V X5R 1206
+Change Component Parameter Description in C41 Old=CAP CER 22UF 10V X7R 1206 New=CAP CER 22UF 25V X5R 1206
+Change Component Parameter Library Reference in C42 Old=C1206C226M8RACTU New=CL31A226KAHNNNE
+Change Component Parameter Library Reference in C41 Old=C1206C226M8RACTU New=CL31A226KAHNNNE
+Change Value of Parameter Manufacturer in Part C42 Old=Kemet New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter Manufacturer in Part C41 Old=Kemet New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter PartId in Part C42 Old=15801 New=15794
+Change Value of Parameter PartId in Part C41 Old=15801 New=15794
+Change Value of Parameter Part Number in Part C42 Old=C1206C226M8RACTU New=CL31A226KAHNNNE
+Change Value of Parameter Part Number in Part C41 Old=C1206C226M8RACTU New=CL31A226KAHNNNE
+Change Value of Parameter Price in Part C42 Old=0.2053 New=0.1785
+Change Value of Parameter Price in Part C41 Old=0.2053 New=0.1785
+Change Value of Parameter Supplier Part Number 1 in Part C42 Old=399-7444-2-ND New=1276-3047-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C41 Old=399-7444-2-ND New=1276-3047-2-ND
+Change Value of Parameter TemperatureCoefficient in Part C42 Old=X7R New=X5R
+Change Value of Parameter TemperatureCoefficient in Part C41 Old=X7R New=X5R
+Change Value of Parameter TemperatureRange in Part C42 Old=-55C ~ 125C New=-55C ~ 85C
+Change Value of Parameter TemperatureRange in Part C41 Old=-55C ~ 125C New=-55C ~ 85C
+Change Value of Parameter Tolerance in Part C42 Old=20% New=10%
+Change Value of Parameter Tolerance in Part C41 Old=20% New=10%
+Change Value of Parameter Voltage in Part C42 Old=10V New=25V
+Change Value of Parameter Voltage in Part C41 Old=10V New=25V
+Replace Part C41 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\5VSupply.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C42 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\5VSupply.SchDoc with Capacitor from Celestial Library Database.DbLib

@@ -1,0 +1,15 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 3:27:58 AM On 5/3/2020
+
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of BOM Document [RTDMeasurement.BomDoc]
+   Generated File[//d.docs.live.net/5d0226765d40c358/Academic Files/Weld Lab/Altium Projects/InterlockSystem/RTD Measurement/Project Outputs for RTDMeasurement/Folder Structure/BOM/Bill of Materials-RTDMeasurement.xls]
+   Generated File[Bill of Materials-RTDMeasurement.xls]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 3:28:26 AM On 5/3/2020

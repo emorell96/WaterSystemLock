@@ -1,0 +1,838 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD19\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2/25/2020</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11:04:36 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:06</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc" class="file"><acronym title="C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc">C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">1</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Waived Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">39</td></tr>
+</table>
+</td>
+</table><a name="ID0RGJQSYPWA5JPNEIQYFN0T1NBMPRBWPDFGCVLMYSLFHKM5Z3IO"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKM1CL2C53KWLDR3UF0QYFXHE5KUHTX5XOSWUPIFO3FSFFK0HXPKG">Clearance Constraint (Gap=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWQEEZV1BUPCTDSQVEQ1GCB2XWBG1JB3GFTGMWPE4X5ZYAF0POIMI">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOQP1RSW0ZBJPNB2HR2T2XPEWEIFT4I4DQ14CSBMIK3Z0O2DID5BD">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3KEHLWOK5E1WJWKVXQGEBG1F3M3LEODSTJMW22EC20DJM0JLNPOO">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPMXWVLRVRFFPLQXLJQ1ANGEMRDD5CEWZD52DR2IECXOVMANKIPLN">Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('AGND'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3W50NCQIDNLYHUBAA1ZODIOHOKK4P3AOGSAEGZLWRYSH2X10DUHP">Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('-12A'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUC4KUNATNGEBFZJ0IPWKM1BXEMGXWB0OG4K2YMP03ORPPAP5F0RD">Width Constraint (Min=0.105mm) (Max=0.508mm) (Preferred=0.15mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDON0EMOTMZ5ROEO4K3VKLL34LZGU1HY0BSVAORRK3KCZHXGMND1CG">Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('GND'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZWPMJJ3JAHWZMLUYP0I5UJVIKLMDPZRQA2PYYRIVQA3CIXIUOGMC">Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('DGND_Out'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5QJ34MWLU13VM1SBD2U0BC51SJ4CJQAU3H5UNWH2MISXNGVZGLEO">Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('+5_OUT'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1VWYF0I5F5XQSGVPB1VJB5GTB5W50BHEHIT2PB5KTFMHUURSKJD">Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('+5'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDFUUQWTMQCWBEBD4FLAVDM3NG4M2J3EUHOVWFL0EMYAHWJIGNZBQG">Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('+12'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDQZ5HIPVM4SMDBOSTQYH1LBEONBECNQZHBFKAAEWOAUNA2IBF0QD">Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('-12'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5MXFM20UG2ORINDGHA42TXHQ4CB1RSWMOVEYW4JLN5GT4LJ3IQ5J">Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('-5A'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDELZEC5JQCJADIO5WPCE43H1YOCU4FYNMG5CFDMELECKNNV1XZ5SN">Width Constraint (Min=0.254mm) (Max=0.635mm) (Preferred=0.381mm) (InNet('-5'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRHPGRZAKW5P1HN5L10OJSAIHHMCB4XPSBUXV3YLVNFOEBJSSJENB">Width Constraint (Min=0.254mm) (Max=1.27mm) (Preferred=0.381mm) (InNet('Vext'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZIKAIFUYUGLQFMM5ODRYL1QHHDZGAFBUOT5PIKGXBT3B5DSLUV3G">Routing Layers(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0QAAMZHXGHFZDDOSYX0SVOFZOIAJIQ303HL3R2LISEPBIOFLYBQD">Routing Via (Templates Used To Check Via: v40h20m0mx0, v40h20m0mx0_2670034071, v60h30, v60h30m0mx0, v60h30m0mx0_2670034071, v60h30_2670034071, v127h71) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2JFLZAWVPZMAPBEIT1ET2N5ABBM5DAH1Q2GDX0GEE0H4NXOR2DBM">Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.254mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.381mm) (Max=0.381mm) (Prefered=0.381mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMLRG0QJXDCPLEO3HZMBW5ESYBEZRZHITMVJPQ1VANDL5ENUYNBJ">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXCVKNLZAKKNICFRFT0PZJK53VOHZTGE0RGNSARMSVHP3N1SZ4IE">Fabrication Testpoint Style (Under Component=Yes) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJPTREVTBUPHXHKQQP4K21SGS4GGVLDHBHSX5XEKFVPB5HM0UEEVD">Fabrication Testpoint Usage (Valid =Don't care, Allow multiple per net=No) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEGJZO3BXRO2EHIRBSLAD043R0ISF4VT0XX5MCPKSE5OL0OV1FB3H">Assembly Testpoint Style (Under Component=Yes) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDL0LQOF2V11DTLCPRM4BAS43OUJ3EFVYOWJU2RTEHKQX0FOCBLCBG">Assembly Testpoint Usage (Valid =Don't care, Allow multiple per net=No) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBQMBXPWWJYRBN2JMPINTRZBYBMY35LAHQC12GSDXMQKVNA0HEFCN">Minimum Annular Ring (Minimum=0.1mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDSAH35HG1ELI2M2RCBPJGHTTW0LBCEUVRL3JUPVHJBUWWLGNAYSNI">Hole Size Constraint (Min=0.2mm) (Max=3.5mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDET34LK3RW0FFNFCIT0X1HNVMKF4UKLYKRXGGE3I23ZK331BQIFP">Pads and Vias to follow the Drill pairs settings</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2QOJZTSHGRFACVC515TNGGOQUEDYV445IKYPRLG5UGYFPPVKJRJE">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNRNJVCYHJCJOKQAPFZHYVMHPUOLMPN1DWEOA2VMKMDAWU3AIMFRM">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQPO2DE5HX0MBMSMEJGSAQXDGIBC5GR0VCKZU0HDTU1TTEDGHFUFG">Silk To Solder Mask (Clearance=0.15mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4AGDI3SR5DT3MSVPZEPXNBGOHBOQWFKPGPAK1D4VT0F5ZN2I2SM">Silk to Silk (Clearance=0.15mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBDHPVGQRNQM3JQTBNZCPYBD0KFLVZWQZRLPA0ZJJDN2MR5PJKKYL">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFNJM0QK3MJ0AEU4EP2RSDO21RLVGO21EH124KZDWV304LAAGNLIE">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0USFRE2EGYMUICZI4BUOOZLLFNEC2UAN1FFY5PCMT15LWLTV3IME">Room U_ComparisonSchH (Bounding Region = (96.35mm, 69.85mm, 115.125mm, 82.325mm) (InComponentClass('U_ComparisonSchH'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHY4USBYTZEBKHX4CV3HQN1QZIJWFYIBNCH101VNVFZEFZVCPQGEN">Room U_ComparisonSchF (Bounding Region = (63mm, 57.5mm, 82mm, 71.25mm) (InComponentClass('U_ComparisonSchF'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID15I1OOYFJAT5NRZSZQL4C1BZJELDF4U2UVUD0DCPXFBVZS0YGBKF">Room U_ComparisonSchI (Bounding Region = (96.35mm, 85.35mm, 115.125mm, 98.825mm) (InComponentClass('U_ComparisonSchI'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDD5UQSDAC5LCUMD4CAOXNQYDNEOMJDI2DBLE3XPMA5UDHB3PWBLF">Room U_ComparisonSchK (Bounding Region = (96.3mm, 118.3mm, 115.2mm, 131.8mm) (InComponentClass('U_ComparisonSchK'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDO51DWBKQEML5GY0QMP3XUV1ZIKTRH2Q2RIL0RHKTYT2Y3YFG4WDG">Room U_ComparisonSchJ (Bounding Region = (96.5mm, 101.726mm, 115.5mm, 115.476mm) (InComponentClass('U_ComparisonSchJ'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDF2AVDDWWGA2MEALRB2R5IVW4IG1MBT3PSY4RP5OAMJRYSKAZRDWI">Room U_ComparisonSchE (Bounding Region = (63.25mm, 72.5mm, 82.25mm, 86.25mm) (InComponentClass('U_ComparisonSchE'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLCOPIFYUVRJGOK24EEXTX0VFDKWUXMLVTH5GADIWMVKRR5LEHTJH">Room U_12VSupply (Bounding Region = (111.975mm, 39.225mm, 136.025mm, 72.725mm) (InComponentClass('U_12VSupply'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXLKPL1RPKUMBLF0AK4H3HFP2PCEAHR2Y1XQYOTMENAWCOKF5HGS">Room U_5VSupply (Bounding Region = (94.7mm, 35.5mm, 124.4mm, 55.3mm) (InComponentClass('U_5VSupply'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDT10YAGTACZ21EBQPAHSRGDD3AHB2H1PEHHK4SJETV3XWU2LF4EN">Room U_ComparisonSchB (Bounding Region = (63mm, 119.5mm, 82mm, 133.25mm) (InComponentClass('U_ComparisonSchB'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGJ3NSROBECSU2K4YA2AWZ20DPOPKG42FQLLLKB0ACZYBPNTZNNI">Room U_ComparisonSchD (Bounding Region = (63mm, 88.5mm, 82mm, 102.25mm) (InComponentClass('U_ComparisonSchD'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID12GPDHFYUY0THFZIJUYW3BJ1RI2SHXI3PMHS22DPFGD0H4PPYVH">Room U_ComparisonSchC (Bounding Region = (63mm, 104mm, 82mm, 117.75mm) (InComponentClass('U_ComparisonSchC'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDO0USHPM4VASVBZJNPJALBT23HMR4ANLMUTFON1PF5U4U3SB0PED">Room U_ComparisonSchL (Bounding Region = (96.5mm, 134.71mm, 115.5mm, 148.46mm) (InComponentClass('U_ComparisonSchL'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDI1UPIWQ5ENPHDZCQMMPQNEVRLEDWUCSCCYI4YQHIYGOBAKYIFVXJ">Room U_ComparisonSchA (Bounding Region = (63.3mm, 135.1mm, 82.2mm, 148.7mm) (InComponentClass('U_ComparisonSchA'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAKAQ2COOWIZUJIT4QVDT5TC1ZK103FUN2O1ZGFDKTZASI5AOFLXI">Room U_VrefSchC (Bounding Region = (58.6mm, 137.6mm, 71mm, 144.8mm) (InComponentClass('U_VrefSchC'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDR0QLAGPVT0J5KHYP3O3WHK4DMBJFJTOKWS0NBCCICU1ACYAGC44L">Room U_ConnectorSchA (Bounding Region = (25.1mm, 131.8mm, 48.2mm, 149mm) (InComponentClass('U_ConnectorSchA'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQRNEQPMKXHAJLSQXU3E2FSV0YBSZOANIG4OVAKIC14UBFQQCS00F">Room U_ConnectorSchC (Bounding Region = (25mm, 97.75mm, 47.75mm, 115mm) (InComponentClass('U_ConnectorSchC'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAVTJ4UCELFYLN1DAMHHBPGOE5O04AC1HJG52LBKXS3JEVL2VVIDM">Room U_ConnectorSchB (Bounding Region = (25mm, 115mm, 47.75mm, 132.25mm) (InComponentClass('U_ConnectorSchB'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYMHOHJLPLF1TM1TZP3VE2HLGTBCBSJV35LN1F4BR2WS1IDOD3HSN">Room U_BufferOutL (Bounding Region = (57.1mm, 37.9mm, 83.1mm, 44.3mm) (InComponentClass('U_BufferOutL'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3BKM2EDX0FPGGOWQHVLVYNIYGLYLDG3VZGZXHLKZEO3UXFS3PPAE">Room MainSch (Bounding Region = (61.5mm, 27.5mm, 118.5mm, 35.5mm) (InComponentClass('MainSch'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDQPRXCAAMWOXTN3NQHJ5UQ4CLKOE2EYC0JGHEAKCA1IPBZZHW4IRM">Room U_BufferOutMonL (Bounding Region = (30.4mm, 37.9mm, 56.4mm, 44.3mm) (InComponentClass('U_BufferOutMonL'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID510NJZOVOIYWPDAWWKOJKOA5OI5T2WN3ZPJTYINRGDIUQEFKLOUH">Room U_BufferOutR (Bounding Region = (86.971mm, 67.471mm, 95.029mm, 134.759mm) (InComponentClass('U_BufferOutR'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3LRAHTOWS4L1CC5PN0DJVQIKBIJFM01U5HD0RMEFZBVHKT4PGMK">Room U_BufferOutMonR (Bounding Region = (120.7mm, 34.7mm, 142.1mm, 41.3mm) (InComponentClass('U_BufferOutMonR'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJ1P2I0D34Q4U2BWAD1ARSQ1PJD5WNAUY2KFWNGWVKNGZ13CZFUJ">Room U_ConnectorSchD (Bounding Region = (25mm, 80.25mm, 47.75mm, 97.5mm) (InComponentClass('U_ConnectorSchD'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTWJ0YHJUEZWOI2TQZKTWSAHW4N15HUTT4Z0ICCIOZ02WGKY21NGO">Room U_ConnectorSchL (Bounding Region = (128.75mm, 132.55mm, 153.975mm, 152.25mm) (InComponentClass('U_ConnectorSchL'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5MHPAL0YOYIFKYBYNN4TNLNLRCJAWZOCRZPQ5RP5IG3L31RREQQC">Room U_ConnectorSchK (Bounding Region = (129.5mm, 116.5mm, 154.1mm, 131.9mm) (InComponentClass('U_ConnectorSchK'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYJMIPQFDAIAVGTPVTGGCW0GLPKKOF0HETO0OZ5HBIU1CGJENUGRK">Room U_RTDAnalogA (Bounding Region = (47.8mm, 135.8mm, 61.4mm, 147mm) (InComponentClass('U_RTDAnalogA'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5GVU40IOPWPMGDWRS4QDFDTXGF54I3VV30ICOPKPFQESGPLHN1XE">Room U_ConnectorSchG (Bounding Region = (129.25mm, 48.5mm, 154mm, 65.5mm) (InComponentClass('U_ConnectorSchG'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCXK3YTTZZ0UHLWBA1MH5EOCCDE0NW0AEF1NKBIJACQ5KL4D01KJ">Room U_ComparisonSchG (Bounding Region = (96.5mm, 52.25mm, 115.5mm, 66mm) (InComponentClass('U_ComparisonSchG'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIZMAMW3WP3WCEHEGQ15ASYRH3KHNTSEKCLNR0ZKDCNM1JSOA3HKP">Room U_ConnectorSchF (Bounding Region = (25mm, 45.25mm, 47.75mm, 62.5mm) (InComponentClass('U_ConnectorSchF'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDG0RMNLQ5DCB3P11QBRWCKJZHNCXI2REFS4QOZFBJ330F1TWXZVAG">Room U_ConnectorSchE (Bounding Region = (25mm, 62.75mm, 47.75mm, 80mm) (InComponentClass('U_ConnectorSchE'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUGXWLIIB4TUMITGEPSI4IRDQNLNYVLCFVXDU4ZMU2FNTZEEH1LEE">Room U_ConnectorSchH (Bounding Region = (129.5mm, 64mm, 154.25mm, 81mm) (InComponentClass('U_ConnectorSchH'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDG0PZYFD4B2U5H4K0EHNTWIA4ACG1YXH21X55PZPVUEFEPDHWQ3GM">Room U_ConnectorSchJ (Bounding Region = (129.5mm, 98.1mm, 154.1mm, 114.9mm) (InComponentClass('U_ConnectorSchJ'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKANG222FF3WOJUMIBY1BSI31WOEWLNKTIAHXD0NOLWE3AK4PU52C">Room U_ConnectorSchI (Bounding Region = (129.5mm, 81mm, 154.25mm, 98mm) (InComponentClass('U_ConnectorSchI'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1AGOMSI3JTO2NKYJUSPQZFTXAJVLTCIB1KYGH1HXCZ3ECFNIONCN">Room U_VrefSchA (Bounding Region = (48.6mm, 96.8mm, 61mm, 104mm) (InComponentClass('U_VrefSchA'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBC5OXRAQRUADMNDZZRSNEF34JCBO1POCVRD5AYNENRLMA03FEXS">Room U_RTDAnalogG (Bounding Region = (115.33mm, 48.83mm, 129.03mm, 59.93mm) (InComponentClass('U_RTDAnalogG'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKLSGAT3X5EQUMNAWMVLOBIE3FOHUHTNMPCJPVKIML1SX1Q4XNILH">Room U_PowerIsolation (Bounding Region = (92.5mm, 129.2mm, 119.4mm, 143mm) (InComponentClass('U_PowerIsolation'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJVQWIAI1P3XGNE55XKQWZDDTBO5YKCD4A1J3SZOBZJ0UN4U21OKD">Room U_RTDAnalogB (Bounding Region = (47.5mm, 119.135mm, 61.25mm, 130.385mm) (InComponentClass('U_RTDAnalogB'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCEWZKNZ4WMA1O1AZP0RXRKBQVD3F3P2K3HDYDBBL5WX1U0JQWNR">Room U_RTDAnalogD (Bounding Region = (47.8mm, 86mm, 61.4mm, 97.1mm) (InComponentClass('U_RTDAnalogD'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNMOUUCF0NVHIFTMATZUPJIO5LNRXYDOKMIFST4JW42CGS1ER0KXD">Room U_RTDAnalogC (Bounding Region = (47.9mm, 102.6mm, 61.4mm, 113.8mm) (InComponentClass('U_RTDAnalogC'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFLU3WFX33O5XJQPMUCGWLUHDWBX2GR3EQMNDRUCKU1ASDMVKMBKJ">Room U_PowerDelivery (Bounding Region = (50.3mm, 37.9mm, 105.9mm, 58mm) (InComponentClass('U_PowerDelivery'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDBEF0JHCSUX1FOJ230W2T0WF5EY0QX2N1UXBGFG1014R0DKXZLJ">Room U_ConnGd- (Bounding Region = (45.4mm, 52.7mm, 89.5mm, 102.7mm) (InComponentClass('U_ConnGd-'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDS1LWWX2XTW25TUDSJJAS2M2IM0YQGCCQMTTYMKXNYTPQRZINA2E">Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDTHKHYI4XZFKZHUE10CAKDTUNZOAIICEZ5INF5RLXHGJGQEYIEAJF">Room U_IsolationOut (Bounding Region = (63.7mm, 92.8mm, 107.7mm, 135.4mm) (InComponentClass('U_IsolationOut'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5VGXJKISB2VOLZU4LAZ1GJ03OE24TCG0I1OE5ADS5L50AOR4CZGM">Room U_Neg12V (Bounding Region = (44.7mm, 101mm, 70.6mm, 127.2mm) (InComponentClass('U_Neg12V'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUBDHT5ZKGEAYBM2SL4E5FMWUINL0BTIYB2E1POTKISXAUSHVTK">Room U_MonitorOut (Bounding Region = (34.45mm, 27.575mm, 148.025mm, 35.425mm) (InComponentClass('U_MonitorOut'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0RXITTPC23NEKCR3MDCMFY3L0HMRVFJOGUWANWCON3XWMQ4TAMYO">Room U_RTDAnalogE (Bounding Region = (47.5mm, 69.29mm, 61.25mm, 80.54mm) (InComponentClass('U_RTDAnalogE'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPTMCEYI5RR4EMUK2HHVRBMVSRLVGXDXYWZUFDH5RZ2QKPN5EBTH">Room U_VccConnSch (Bounding Region = (136.696mm, 37.871mm, 150.879mm, 49.129mm) (InComponentClass('U_VccConnSch'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEPXJRO3GRIG2CVHVDRWTF5BFIKQT2PXXH1RPRZF1HP3NI2YFVX0F">Room U_RTDAnalogJ (Bounding Region = (115.6mm, 101.375mm, 128.975mm, 112.375mm) (InComponentClass('U_RTDAnalogJ'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLLAZW3A1QY5YPWRTO1K2MC1VPEQLXOKLDLWXBKPENPZI5FSQ1WAI">Room U_RTDAnalogK (Bounding Region = (118.2mm, 118.875mm, 128.975mm, 131.55mm) (InComponentClass('U_RTDAnalogK'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID10Y2GDZXJTD5P4KVYRNAUGGUGJARO5NT4VGITNMTGBD1FU54B3QK">Room U_RTDAnalogL (Bounding Region = (118.2mm, 136.3mm, 129mm, 148.3mm) (InComponentClass('U_RTDAnalogL'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2M2BFDW5FM45OIEYZ5WKSU0MMHYZKC4QB5UUWJ1DVS14X1MNT5E">Room U_VrefSchB (Bounding Region = (96.9mm, 65.3mm, 109.6mm, 71.9mm) (InComponentClass('U_VrefSchB'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTW3KQHIB4MSZMNKSJGGHX2V14OOICGTKHJCKYALYASABJVLOVY3E">Room U_RTDAnalogF (Bounding Region = (47.5mm, 52.675mm, 61.25mm, 63.925mm) (InComponentClass('U_RTDAnalogF'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDKNHYWKBNGGZIIGVKTXB4WN3DSJPELFVJIXLDDQH2HPDJMIJB2ILP">Room U_RTDAnalogI (Bounding Region = (115.33mm, 83.828mm, 129.03mm, 94.928mm) (InComponentClass('U_RTDAnalogI'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLW1FZBT4KOKIHK3QYCDMA3ZGMKKVU32JMD3XI1CGJU1JC0QKLFEC">Room U_RTDAnalogH (Bounding Region = (115.6mm, 66.3mm, 129mm, 77.4mm) (InComponentClass('U_RTDAnalogH'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNH5AIQQQZJDCG0JRCXA5UHFBCBLEAUIJ5B5K2YITJK4CHIUNKVZC">Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) </a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMKNSPP14Z5WFMMNOHNV0DCRNUBG4MFCOX2E43NB3V5L1UI3A4WRM">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">1</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Waived Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVYOOCP3RQRGEJTI1T2SFNSTPSGTHKUJ0FFPRUFORSDOBGLLFT05N">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">20</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID53XCXWTSI21AKGPLZODLFWWICC24VUVRPYFELQNRUEYOWDQOQ1WJ">Room U_ConnectorSchC (Bounding Region = (25mm, 97.75mm, 47.75mm, 115mm) (InComponentClass('U_ConnectorSchC'))</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDS5E0CKNASB51H1NEFLZPI1BN1EEPFEZBEF5YTMIGX5O5MWUKZCEK">Room U_ConnectorSchB (Bounding Region = (25mm, 115mm, 47.75mm, 132.25mm) (InComponentClass('U_ConnectorSchB'))</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDWREI5L2SVSMWMRBZA2SZQN3HENVVTFGKF3STZSMGNAD1NIMB0KQB">Room MainSch (Bounding Region = (61.5mm, 27.5mm, 118.5mm, 35.5mm) (InComponentClass('MainSch'))</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID5WFMWUJPK45DBMVWHF4UTPWHRGUHSV10Q0SIL2LZLK2JCY1LAQUM">Room U_BufferOutR (Bounding Region = (86.971mm, 67.471mm, 95.029mm, 134.759mm) (InComponentClass('U_BufferOutR'))</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCNDAEYXRJFFALJF20FEZGHXTEP3Z3YDCESMLKCMTYQDVH132133M">Room U_ConnectorSchD (Bounding Region = (25mm, 80.25mm, 47.75mm, 97.5mm) (InComponentClass('U_ConnectorSchD'))</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMPYTTSMD2FMOIMFUJPDBEFTR5DX11UND00YCQABJWOPZVWLCTCNN">Room U_ConnectorSchF (Bounding Region = (25mm, 45.25mm, 47.75mm, 62.5mm) (InComponentClass('U_ConnectorSchF'))</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKVUSSG0QS4RFNWX35CJNMPZ2QP2MMTSULUSAL4MV4RKL4A45WVDC">Room U_ConnectorSchE (Bounding Region = (25mm, 62.75mm, 47.75mm, 80mm) (InComponentClass('U_ConnectorSchE'))</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVPNYRBEO4NWRKDXC1BHJ3PA0WLAARHJQ3VMQJQNN2RCIFHQS3HW">Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+'))</a></td>
+<td class="column2">10</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">39</td>
+</tr>
+</table><br><a name="IDL0WD22HHUHCOM151PGZDA5XDLIBO2ZUCOVGYPAJ5UA35UGPF3WZL"><h2>Rule Violations</h2></a><a name="IDFNJM0QK3MJ0AEU4EP2RSDO21RLVGO21EH124KZDWV304LAAGNLIE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3368.069mil|Location2.X=3374.318mil|Location1.Y=1445.202mil|Location2.Y=1451.451mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3368.069mil|Location2.X=3374.318mil|Location1.Y=1445.202mil|Location2.Y=1451.451mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.2mm) Between Board Edge And Text "© Enrique Morell
+All rights reserved, 2020" (29.6mm,8.025mm) on Bottom Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID44EWPSYTOX44DENRIVWK2LJPAMNRNWJIONUBG1DCUOPK5TKPHYTB"><h2>Waived Violations</h2></a><a name="IDVYOOCP3RQRGEJTI1T2SFNSTPSGTHKUJ0FFPRUFORSDOBGLLFT05N"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4989.725mil|Location2.X=4994.912mil|Location1.Y=2314.835mil|Location2.Y=2320.022mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4989.725mil|Location2.X=4994.912mil|Location1.Y=2314.835mil|Location2.Y=2320.022mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.055mm &lt; 0.1mm) Between Pad U4-19(99.225mm,30.465mm) on Bottom Layer And Pad U4-40(98.16mm,32.14mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.055mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:45:14 PM<br>Part of not signal pad, and same net</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4918.85mil|Location2.X=4924.037mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4918.85mil|Location2.X=4924.037mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U4-21(96.875mm,30.145mm) on Bottom Layer And Pad U4-41(95.42mm,31.82mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:37:35 PM<br>Same net. So no risk of shortcircuit. Pin 21 and 41. (PH)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4883.42mil|Location2.X=4888.607mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4883.42mil|Location2.X=4888.607mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U4-22(95.975mm,30.145mm) on Bottom Layer And Pad U4-41(95.42mm,31.82mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:38:18 PM<br>Same net. So no risk of shortcircuit. Pin 22 and 41. (PH)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4847.99mil|Location2.X=4853.177mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4847.99mil|Location2.X=4853.177mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U4-23(95.075mm,30.145mm) on Bottom Layer And Pad U4-41(95.42mm,31.82mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:38:51 PM<br>Same net. So no risk of shortcircuit. Pin 23 and 41. (PH)</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4841.702mil|Location2.X=4846.889mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4841.702mil|Location2.X=4846.889mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U4-24(94.175mm,30.145mm) on Bottom Layer And Pad U4-41(95.42mm,31.82mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:39:04 PM<br>Same net. So no risk of shortcircuit. Pin 24 and 41. (PH)</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4989.725mil|Location2.X=4994.912mil|Location1.Y=2314.835mil|Location2.Y=2320.022mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4989.725mil|Location2.X=4994.912mil|Location1.Y=2314.835mil|Location2.Y=2320.022mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.055mm &lt; 0.1mm) Between Pad U4-40(98.16mm,32.14mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.055mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4918.85mil|Location2.X=4924.037mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4918.85mil|Location2.X=4924.037mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U4-41(95.42mm,31.82mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4841.702mil|Location2.X=4846.889mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4841.702mil|Location2.X=4846.889mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U4-41(95.42mm,31.82mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4847.99mil|Location2.X=4853.177mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4847.99mil|Location2.X=4853.177mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U4-41(95.42mm,31.82mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4883.42mil|Location2.X=4888.607mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4883.42mil|Location2.X=4888.607mil|Location1.Y=2289.54mil|Location2.Y=2294.727mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U4-41(95.42mm,31.82mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2337.16mil|Location2.X=2342.347mil|Location1.Y=4612.27mil|Location2.Y=4617.457mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2337.16mil|Location2.X=2342.347mil|Location1.Y=4612.27mil|Location2.Y=4617.457mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.055mm &lt; 0.1mm) Between Pad U7-19(31.85mm,88.82mm) on Bottom Layer And Pad U7-40(30.785mm,90.495mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.055mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2266.285mil|Location2.X=2271.472mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2266.285mil|Location2.X=2271.472mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U7-21(29.5mm,88.5mm) on Bottom Layer And Pad U7-41(28.045mm,90.175mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2230.855mil|Location2.X=2236.042mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2230.855mil|Location2.X=2236.042mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U7-22(28.6mm,88.5mm) on Bottom Layer And Pad U7-41(28.045mm,90.175mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2195.425mil|Location2.X=2200.612mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2195.425mil|Location2.X=2200.612mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U7-23(27.7mm,88.5mm) on Bottom Layer And Pad U7-41(28.045mm,90.175mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2189.137mil|Location2.X=2194.324mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2189.137mil|Location2.X=2194.324mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U7-24(26.8mm,88.5mm) on Bottom Layer And Pad U7-41(28.045mm,90.175mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2337.16mil|Location2.X=2342.347mil|Location1.Y=4612.27mil|Location2.Y=4617.457mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2337.16mil|Location2.X=2342.347mil|Location1.Y=4612.27mil|Location2.Y=4617.457mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.055mm &lt; 0.1mm) Between Pad U7-40(30.785mm,90.495mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.055mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2189.137mil|Location2.X=2194.324mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2189.137mil|Location2.X=2194.324mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U7-41(28.045mm,90.175mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2195.425mil|Location2.X=2200.612mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2195.425mil|Location2.X=2200.612mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U7-41(28.045mm,90.175mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2266.285mil|Location2.X=2271.472mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2266.285mil|Location2.X=2271.472mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U7-41(28.045mm,90.175mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2230.855mil|Location2.X=2236.042mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2230.855mil|Location2.X=2236.042mil|Location1.Y=4586.975mil|Location2.Y=4592.162mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (0.06mm &lt; 0.1mm) Between Pad U7-41(28.045mm,90.175mm) on Bottom Layer And Region (0 hole(s)) Bottom Solder [Bottom Solder] Mask Sliver [0.06mm]</acronym></a><br>Waived by Enrique Morell Salcedo at 2/17/2020 10:43:36 PM<br>Same net. So no risk of shortcircuit.</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID53XCXWTSI21AKGPLZODLFWWICC24VUVRPYFELQNRUEYOWDQOQ1WJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Room U_ConnectorSchC (Bounding Region = (25mm, 97.75mm, 47.75mm, 115mm) (InComponentClass('U_ConnectorSchC'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=984.252mil|Location2.X=1886.811mil|Location1.Y=3848.425mil|Location2.Y=4527.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=984.252mil|Location2.X=1886.811mil|Location1.Y=3848.425mil|Location2.Y=4527.559mil|Absolute=True">Room Definition: Between Room U_ConnectorSchC (Bounding Region = (25mm, 97.75mm, 47.75mm, 115mm) (InComponentClass('U_ConnectorSchC')) And SMT Small Component R28C-0.0 (18.25mm,78.25mm) on Top Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDS5E0CKNASB51H1NEFLZPI1BN1EEPFEZBEF5YTMIGX5O5MWUKZCEK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Room U_ConnectorSchB (Bounding Region = (25mm, 115mm, 47.75mm, 132.25mm) (InComponentClass('U_ConnectorSchB'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=984.252mil|Location2.X=1886.811mil|Location1.Y=4527.559mil|Location2.Y=5206.693mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=984.252mil|Location2.X=1886.811mil|Location1.Y=4527.559mil|Location2.Y=5206.693mil|Absolute=True">Room Definition: Between Room U_ConnectorSchB (Bounding Region = (25mm, 115mm, 47.75mm, 132.25mm) (InComponentClass('U_ConnectorSchB')) And SMT Small Component R28B-0.0 (18.25mm,95.5mm) on Top Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDWREI5L2SVSMWMRBZA2SZQN3HENVVTFGKF3STZSMGNAD1NIMB0KQB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Room MainSch (Bounding Region = (61.5mm, 27.5mm, 118.5mm, 35.5mm) (InComponentClass('MainSch'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2421.26mil|Location2.X=4832.756mil|Location1.Y=1082.677mil|Location2.Y=1397.638mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2421.26mil|Location2.X=4832.756mil|Location1.Y=1082.677mil|Location2.Y=1397.638mil|Absolute=True">Room Definition: Between Room MainSch (Bounding Region = (61.5mm, 27.5mm, 118.5mm, 35.5mm) (InComponentClass('MainSch')) And SIP Component J6-0022272081 (83.23mm,4mm) on Top Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID5WFMWUJPK45DBMVWHF4UTPWHRGUHSV10Q0SIL2LZLK2JCY1LAQUM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Room U_BufferOutR (Bounding Region = (86.971mm, 67.471mm, 95.029mm, 134.759mm) (InComponentClass('U_BufferOutR'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3424.055mil|Location2.X=4743.11mil|Location1.Y=1386.811mil|Location2.Y=5305.473mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3424.055mil|Location2.X=4743.11mil|Location1.Y=1386.811mil|Location2.Y=5305.473mil|Absolute=True">Room Definition: Between Room U_BufferOutR (Bounding Region = (86.971mm, 67.471mm, 95.029mm, 134.759mm) (InComponentClass('U_BufferOutR')) And SOIC Component U10B-ADA4075-2ARZ (88.2mm,10.5mm) on Top Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3424.055mil|Location2.X=4105.315mil|Location1.Y=1386.811mil|Location2.Y=5305.473mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3424.055mil|Location2.X=4105.315mil|Location1.Y=1386.811mil|Location2.Y=5305.473mil|Absolute=True">Room Definition: Between Room U_BufferOutR (Bounding Region = (86.971mm, 67.471mm, 95.029mm, 134.759mm) (InComponentClass('U_BufferOutR')) And SOIC Component U5B-ADA4075-2ARZ (72mm,10.5mm) on Top Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3424.055mil|Location2.X=4424.212mil|Location1.Y=1386.811mil|Location2.Y=5305.473mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3424.055mil|Location2.X=4424.212mil|Location1.Y=1386.811mil|Location2.Y=5305.473mil|Absolute=True">Room Definition: Between Room U_BufferOutR (Bounding Region = (86.971mm, 67.471mm, 95.029mm, 134.759mm) (InComponentClass('U_BufferOutR')) And SOIC Component U9B-ADA4075-2ARZ (80.1mm,10.5mm) on Top Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDCNDAEYXRJFFALJF20FEZGHXTEP3Z3YDCESMLKCMTYQDVH132133M"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Room U_ConnectorSchD (Bounding Region = (25mm, 80.25mm, 47.75mm, 97.5mm) (InComponentClass('U_ConnectorSchD'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=984.252mil|Location2.X=1886.811mil|Location1.Y=3159.449mil|Location2.Y=3838.583mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=984.252mil|Location2.X=1886.811mil|Location1.Y=3159.449mil|Location2.Y=3838.583mil|Absolute=True">Room Definition: Between Room U_ConnectorSchD (Bounding Region = (25mm, 80.25mm, 47.75mm, 97.5mm) (InComponentClass('U_ConnectorSchD')) And SMT Small Component R28D-0.0 (18.25mm,60.75mm) on Top Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDMPYTTSMD2FMOIMFUJPDBEFTR5DX11UND00YCQABJWOPZVWLCTCNN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Room U_ConnectorSchF (Bounding Region = (25mm, 45.25mm, 47.75mm, 62.5mm) (InComponentClass('U_ConnectorSchF'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=984.252mil|Location2.X=1886.811mil|Location1.Y=1781.496mil|Location2.Y=2460.63mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=984.252mil|Location2.X=1886.811mil|Location1.Y=1781.496mil|Location2.Y=2460.63mil|Absolute=True">Room Definition: Between Room U_ConnectorSchF (Bounding Region = (25mm, 45.25mm, 47.75mm, 62.5mm) (InComponentClass('U_ConnectorSchF')) And SMT Small Component R28F-0.0 (18.25mm,25.75mm) on Top Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDKVUSSG0QS4RFNWX35CJNMPZ2QP2MMTSULUSAL4MV4RKL4A45WVDC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Room U_ConnectorSchE (Bounding Region = (25mm, 62.75mm, 47.75mm, 80mm) (InComponentClass('U_ConnectorSchE'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=984.252mil|Location2.X=1886.811mil|Location1.Y=2470.472mil|Location2.Y=3149.606mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=984.252mil|Location2.X=1886.811mil|Location1.Y=2470.472mil|Location2.Y=3149.606mil|Absolute=True">Room Definition: Between Room U_ConnectorSchE (Bounding Region = (25mm, 62.75mm, 47.75mm, 80mm) (InComponentClass('U_ConnectorSchE')) And SMT Small Component R28E-0.0 (18.25mm,43.25mm) on Top Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDVPNYRBEO4NWRKDXC1BHJ3PA0WLAARHJQ3VMQJQNN2RCIFHQS3HW"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3517.48mil|Location2.X=4025.591mil|Location1.Y=3164.095mil|Location2.Y=5738.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3517.48mil|Location2.X=4025.591mil|Location1.Y=3164.095mil|Location2.Y=5738.189mil|Absolute=True">Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SIP Component CF1A-0022272081 (64.5mm,63.89mm) on Top Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3517.48mil|Location2.X=4025.591mil|Location1.Y=2271.968mil|Location2.Y=5738.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3517.48mil|Location2.X=4025.591mil|Location1.Y=2271.968mil|Location2.Y=5738.189mil|Absolute=True">Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SIP Component CF2A-0022272081 (64.5mm,41.23mm) on Top Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.843mil|Location2.X=4268.307mil|Location1.Y=3856.693mil|Location2.Y=5738.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.843mil|Location2.X=4268.307mil|Location1.Y=3856.693mil|Location2.Y=5738.189mil|Absolute=True">Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SMT Small Component C15A-0.1uF (78.14mm,82.56mm) on Bottom Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.843mil|Location2.X=4406.102mil|Location1.Y=3460.039mil|Location2.Y=5738.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.843mil|Location2.X=4406.102mil|Location1.Y=3460.039mil|Location2.Y=5738.189mil|Absolute=True">Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SMT Small Component C17A-0.1uF (82.34mm,62.16mm) on Bottom Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3788.386mil|Location2.X=4025.591mil|Location1.Y=3599.41mil|Location2.Y=5738.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3788.386mil|Location2.X=4025.591mil|Location1.Y=3599.41mil|Location2.Y=5738.189mil|Absolute=True">Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SMT Small Component C18A-0.1uF (69.5mm,65mm) on Bottom Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.843mil|Location2.X=4436.024mil|Location1.Y=2922.244mil|Location2.Y=5738.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.843mil|Location2.X=4436.024mil|Location1.Y=2922.244mil|Location2.Y=5738.189mil|Absolute=True">Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SMT Small Component C19A-0.1uF (83.1mm,48.5mm) on Bottom Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3768.701mil|Location2.X=4025.591mil|Location1.Y=3856.693mil|Location2.Y=5738.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3768.701mil|Location2.X=4025.591mil|Location1.Y=3856.693mil|Location2.Y=5738.189mil|Absolute=True">Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SMT Small Component C20A-0.1uF (68.3mm,82.6mm) on Bottom Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3838.189mil|Location2.X=4298.819mil|Location1.Y=3841.732mil|Location2.Y=5738.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3838.189mil|Location2.X=4298.819mil|Location1.Y=3841.732mil|Location2.Y=5738.189mil|Absolute=True">Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SOIC Component IC1A-SI8640BD-B-IS (74.84mm,75.505mm) on Bottom Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3798.819mil|Location2.X=4259.449mil|Location1.Y=3158.858mil|Location2.Y=5738.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3798.819mil|Location2.X=4259.449mil|Location1.Y=3158.858mil|Location2.Y=5738.189mil|Absolute=True">Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SOIC Component IC2A-SI8640BD-B-IS (73.84mm,58.16mm) on Bottom Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.843mil|Location2.X=4350mil|Location1.Y=2580.118mil|Location2.Y=5738.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\emore\OneDrive\Academic Files\Weld Lab\Altium Projects\InterlockSystem\RTD Measurement\RTD_12POS_WPSv3.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3859.843mil|Location2.X=4350mil|Location1.Y=2580.118mil|Location2.Y=5738.189mil|Absolute=True">Room Definition: Between Room U_ConnGd+ (Bounding Region = (98.04mm, 97.96mm, 102.25mm, 145.75mm) (InComponentClass('U_ConnGd+')) And SOIC Component IC3A-SI8640BD-B-IS (76.14mm,43.46mm) on Bottom Layer </acronym></a><br>Waived by Enrique Morell Salcedo at 2/25/2020 10:47:43 PM<br>Who cares about rooms crossing each other...</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

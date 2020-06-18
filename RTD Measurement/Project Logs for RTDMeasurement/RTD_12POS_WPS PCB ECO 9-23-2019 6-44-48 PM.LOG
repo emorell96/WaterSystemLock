@@ -1,0 +1,28 @@
+Added Component: Designator=J4(CUI SDS-50J)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Colour"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://media.digikey.com/pdf/Data%20Sheets/CUI%20Inc%20All%20Brands%20PDFs/SDS-J.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Digi-Key Listing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/cui-inc/SDS-50J/CP-2350-ND/97033"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Finish"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fastening Type"; Value = "Push-Pull"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "CUI Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number Of Positions"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number Of Rows"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "16458"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "SDS-50J"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "1.86"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "CP-2350-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Receptacle, Female Sockets"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12 Pin=J4-1
+Added Pin To Net: NetName=+5 Pin=J4-2
+Added Pin To Net: NetName=GND Pin=J4-3
+Added Pin To Net: NetName=-5 Pin=J4-4
+Added Pin To Net: NetName=-12 Pin=J4-5
+Added Pin To Net: NetName=GND Pin=J4-S1
+Added Pin To Net: NetName=GND Pin=J4-S2
+Added Member To Class: ClassName=U_PowerDelivery Member=Component J4 SDS-50J

@@ -1,0 +1,53 @@
+Added Component: Designator=J2(MOLEX KK 0022272031)
+Add component (AddParameter): Name = "Colour"; Value = "Natural"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.molex.com/pdm_docs/sd/022272031_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Digi-Key Listing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.digikey.com/product-search/en?keywords=22-27-2031"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Finish"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fastening Type"; Value = "Friction Lock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex, LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number Of Positions"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number Of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "0022272031"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "9720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.100" (2.54mm)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0.35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "KK 6410"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "WM4112-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Header, Unshrouded"; VariantName = "[No Variations]"
+Added Component: Designator=U5(ADI-R-8_N)
+Add component (AddParameter): Name = "Amplifiers Per Package"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-012-AA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.analog.com/en/index.html"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.analog.com/static/imported-files/data_sheets/ADA4075-2.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.analog.com/static/imported-files/packages/PKG_PDF/SOIC_Narrow%20(R)/R_8.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Rev. B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Generic Part Number"; Value = "ADA4075-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Bias Current"; Value = "30nA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Offset Voltage"; Value = "300uV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Iq/Amp"; Value = "1.8mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "8-Pin Standard Small Outline Package, Body 3.9 x 4.9 mm, Pitch 1.27 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "R-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "060506-A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "ADA4075-2ARZ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Slew Rate"; Value = "12V/us"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Small Signal Bandwidth"; Value = "6.5MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "V Span Max"; Value = "36V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "V Span Min"; Value = "24V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J2-3
+Added Pin To Net: NetName=NetJ1_2 Pin=U5-3
+Added Pin To Net: NetName=NetR2_2 Pin=U5-5
+Added Pin To Net: NetName=NetJ2_1 Pin=J2-1
+Added Pin To Net: NetName=NetJ2_1 Pin=U5-6
+Added Pin To Net: NetName=NetJ2_1 Pin=U5-7
+Added Net: Name=NetJ2_1
+Added Pin To Net: NetName=NetJ2_2 Pin=J2-2
+Added Pin To Net: NetName=NetJ2_2 Pin=U5-2
+Added Net: Name=NetJ2_2

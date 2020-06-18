@@ -1,0 +1,15 @@
+Change Component Parameter Comment in C6 Old= New==Value
+Change Value of Parameter ComponentLink1URL in Part C6 Old=http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf New=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU
+Change Value of Parameter ComponentLink2Description in Part C6 Old=Digi-Key Listing New=Digi-Key listing
+Change Value of Parameter ComponentLink2URL in Part C6 Old=https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM155R71C104JA88D/490-6327-2-ND/2610891 New=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735
+Change Component Parameter Description in C6 Old=CAP CER 0.1UF 16V X7R 0402 New=CAP CER 0.1UF 25V X7R 0805
+Change Value of Parameter Device Package in Part C6 Old=0402 (1005 Metric) New=0805 (2012 Metric)
+Change Component Parameter Library Reference in C6 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Value of Parameter Manufacturer in Part C6 Old=Murata Electronics North America New=Kemet
+Change Value of Parameter PartId in Part C6 Old=12366 New=6117
+Change Value of Parameter Part Number in Part C6 Old=GRM155R71C104JA88D New=C0805C104J3RACTU
+Change Value of Parameter Price in Part C6 Old=0.0046 New=0.1549
+Change Value of Parameter Supplier Part Number 1 in Part C6 Old=490-6327-2-ND New=399-7997-2-ND
+Change Value of Parameter Value in Part C6 Old=0.10uF New=0.1uF
+Change Value of Parameter Voltage in Part C6 Old=16V New=25V
+Replace Part C6 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\ComparisonSch.SchDoc with Capacitor from Celestial Library Database.DbLib

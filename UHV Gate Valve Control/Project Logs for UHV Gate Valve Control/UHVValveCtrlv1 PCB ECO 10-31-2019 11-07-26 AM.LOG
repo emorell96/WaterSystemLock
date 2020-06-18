@@ -1,0 +1,27 @@
+Added Component: Designator=BYP(SW_CL-SB-12B-01)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Actuator Type"; Value = "Standard"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Circuit"; Value = "SPDT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.nidec-copal-electronics.com/e/catalog/switch/cl-sb.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Digi-Key Listing"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digikey.com/product-detail/en/nidec-copal-electronics/CL-SB-12B-01T/563-1318-1-ND/3507878"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Nidec Copal Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mechanical Life"; Value = "10,000 Cycles"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40°C ~ 85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "16472"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "CL-SB-12B-01T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0.9"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "CL-SB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "563-1318-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Switch Function"; Value = "On-On"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Switch Travel"; Value = "2.00mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TYPE"; Value = "Slide Switches"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=BYP-1
+Added Pin To Net: NetName=+12 Pin=BYP-3
+Added Pin To Net: NetName=NetBYP_2 Pin=BYP-2
+Added Pin To Net: NetName=NetBYP_2 Pin=J1-2
+Added Pin To Net: NetName=NetBYP_2 Pin=U1-3
+Added Net: Name=NetBYP_2
+Added Member To Class: ClassName=U_AnalogPressure Member=Component BYP CL-SB-12B-01T

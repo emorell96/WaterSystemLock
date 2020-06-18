@@ -1,0 +1,13 @@
+Change Component Comment : Designator=U4 Old Comment=LMZ34003 New Comment=LMZ35003RKGR
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=GND Pin=R13-1
+Added Pin To Net: NetName=GND Pin=R14-1
+Added Pin To Net: NetName=GND Pin=U4-1
+Added Pin To Net: NetName=GND Pin=U4-4
+Added Pin To Net: NetName=GND Pin=U4-5
+Added Pin To Net: NetName=GND Pin=U4-29
+Added Pin To Net: NetName=GND Pin=U4-30
+Added Pin To Net: NetName=GND Pin=U4-32
+Added Pin To Net: NetName=GND Pin=U4-33
+Added Pin To Net: NetName=GND Pin=U4-34
+Added Pin To Net: NetName=GND Pin=U4-37

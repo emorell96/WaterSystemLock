@@ -1,0 +1,48 @@
+Change Component Parameter Comment in C13 Old= New==Value
+Change Component Parameter Comment in C12 Old= New==Value
+Change Component Parameter Comment in C11 Old= New==Value
+Change Component Parameter Comment in C10 Old= New==Value
+Change Value of Parameter ComponentLink1URL in Part C13 Old=http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61E226KE15-01.pdf New=//media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL31A226KAHNNNE_Spec.pdf
+Change Value of Parameter ComponentLink1URL in Part C12 Old=http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61E226KE15-01.pdf New=//media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL31A226KAHNNNE_Spec.pdf
+Change Value of Parameter ComponentLink1URL in Part C11 Old=http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61E226KE15-01.pdf New=//media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL31A226KAHNNNE_Spec.pdf
+Change Value of Parameter ComponentLink1URL in Part C10 Old=http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER61E226KE15-01.pdf New=//media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL31A226KAHNNNE_Spec.pdf
+Change Value of Parameter ComponentLink2URL in Part C13 Old=https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM32ER61E226KE15K/490-6540-2-ND/2548474 New=https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CL31A226KAHNNNE/1276-3047-2-ND/3888705
+Change Value of Parameter ComponentLink2URL in Part C12 Old=https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM32ER61E226KE15K/490-6540-2-ND/2548474 New=https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CL31A226KAHNNNE/1276-3047-2-ND/3888705
+Change Value of Parameter ComponentLink2URL in Part C11 Old=https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM32ER61E226KE15K/490-6540-2-ND/2548474 New=https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CL31A226KAHNNNE/1276-3047-2-ND/3888705
+Change Value of Parameter ComponentLink2URL in Part C10 Old=https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM32ER61E226KE15K/490-6540-2-ND/2548474 New=https://www.digikey.com/product-detail/en/samsung-electro-mechanics-america-inc/CL31A226KAHNNNE/1276-3047-2-ND/3888705
+Change Component Parameter Description in C13 Old=CAP CER 22UF 25V X5R 1210 New=CAP CER 22UF 25V X5R 1206
+Change Component Parameter Description in C12 Old=CAP CER 22UF 25V X5R 1210 New=CAP CER 22UF 25V X5R 1206
+Change Component Parameter Description in C11 Old=CAP CER 22UF 25V X5R 1210 New=CAP CER 22UF 25V X5R 1206
+Change Component Parameter Description in C10 Old=CAP CER 22UF 25V X5R 1210 New=CAP CER 22UF 25V X5R 1206
+Change Value of Parameter Device Package in Part C13 Old=1210 (3225 Metric) New=1206 (3216 Metric)
+Change Value of Parameter Device Package in Part C12 Old=1210 (3225 Metric) New=1206 (3216 Metric)
+Change Value of Parameter Device Package in Part C11 Old=1210 (3225 Metric) New=1206 (3216 Metric)
+Change Value of Parameter Device Package in Part C10 Old=1210 (3225 Metric) New=1206 (3216 Metric)
+Change Component Parameter Library Reference in C13 Old=GRM32ER61E226KE15K New=CL31A226KAHNNNE
+Change Component Parameter Library Reference in C12 Old=GRM32ER61E226KE15K New=CL31A226KAHNNNE
+Change Component Parameter Library Reference in C11 Old=GRM32ER61E226KE15K New=CL31A226KAHNNNE
+Change Component Parameter Library Reference in C10 Old=GRM32ER61E226KE15K New=CL31A226KAHNNNE
+Change Value of Parameter Manufacturer in Part C13 Old=Murata Electronics North America New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter Manufacturer in Part C12 Old=Murata Electronics North America New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter Manufacturer in Part C11 Old=Murata Electronics North America New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter Manufacturer in Part C10 Old=Murata Electronics North America New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter PartId in Part C13 Old=19044 New=15794
+Change Value of Parameter PartId in Part C12 Old=19044 New=15794
+Change Value of Parameter PartId in Part C11 Old=19044 New=15794
+Change Value of Parameter PartId in Part C10 Old=19044 New=15794
+Change Value of Parameter Part Number in Part C13 Old=GRM32ER61E226KE15K New=CL31A226KAHNNNE
+Change Value of Parameter Part Number in Part C12 Old=GRM32ER61E226KE15K New=CL31A226KAHNNNE
+Change Value of Parameter Part Number in Part C11 Old=GRM32ER61E226KE15K New=CL31A226KAHNNNE
+Change Value of Parameter Part Number in Part C10 Old=GRM32ER61E226KE15K New=CL31A226KAHNNNE
+Change Value of Parameter Price in Part C13 Old=0.2144 New=0.1785
+Change Value of Parameter Price in Part C12 Old=0.2144 New=0.1785
+Change Value of Parameter Price in Part C11 Old=0.2144 New=0.1785
+Change Value of Parameter Price in Part C10 Old=0.2144 New=0.1785
+Change Value of Parameter Supplier Part Number 1 in Part C13 Old=490-6540-2-ND New=1276-3047-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C12 Old=490-6540-2-ND New=1276-3047-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C11 Old=490-6540-2-ND New=1276-3047-2-ND
+Change Value of Parameter Supplier Part Number 1 in Part C10 Old=490-6540-2-ND New=1276-3047-2-ND
+Replace Part C10 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\12VSupply.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C11 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\12VSupply.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C12 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\12VSupply.SchDoc with Capacitor from Celestial Library Database.DbLib
+Replace Part C13 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\12VSupply.SchDoc with Capacitor from Celestial Library Database.DbLib

@@ -1,0 +1,27 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 2:36:36 AM On 5/3/2020
+
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : PCB Document [RTD_12POS_WPSv3.PcbDoc]
+   Generated File[RTD_12POS_WPSv3_Copper_Signal_Top.gbr]
+   Generated File[RTD_12POS_WPSv3_Copper_Signal_Bot.gbr]
+   Generated File[RTD_12POS_WPSv3_Legend_Bot.gbr]
+   Generated File[RTD_12POS_WPSv3_Soldermask_Bot.gbr]
+   Generated File[RTD_12POS_WPSv3_Paste_Bot.gbr]
+   Generated File[RTD_12POS_WPSv3_Legend_Top.gbr]
+   Generated File[RTD_12POS_WPSv3_Paste_Top.gbr]
+   Generated File[RTD_12POS_WPSv3_Soldermask_Top.gbr]
+   Generated File[RTD_12POS_WPSv3_Keep-out.gbr]
+   Generated File[RTD_12POS_WPSv3_Mechanical_2.gbr]
+   Generated File[RTD_12POS_WPSv3_Profile.gbr]
+   Generated File[RTD_12POS_WPSv3.RUL]
+   Generated File[RTD_12POS_WPSv3.EXTREP]
+   Generated File[RTD_12POS_WPSv3.REP]
+
+
+Files Generated   : 14
+Documents Printed : 0
+
+Finished Output Generation At 2:36:47 AM On 5/3/2020

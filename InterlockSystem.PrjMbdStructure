@@ -1,0 +1,2 @@
+Record=DiagramHierarchy|SourceDocument=InterlockWeld.MbsDoc|Kind=Multi-board Schematic Module|Designator=M2|Source=RTD Measurement\RTDMeasurement.PrjPcb
+Record=SubProject|SourceDocument=InterlockWeld.MbsDoc|ProjectPath=RTD Measurement\RTDMeasurement.PrjPcb

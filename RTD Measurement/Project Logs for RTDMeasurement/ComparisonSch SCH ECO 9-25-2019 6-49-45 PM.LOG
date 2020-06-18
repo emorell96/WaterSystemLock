@@ -1,0 +1,11 @@
+Change Component Parameter Comment in C6 Old= New==Value
+Change Value of Parameter ComponentLink1URL in Part C6 Old=http://www.kemet.com/docfinder?Partnumber=C0805C104J3RACTU New=http://www.samsungsem.com/kr/support/product-search/mlcc/CL21B104KACNNNC.jsp
+Change Value of Parameter ComponentLink2URL in Part C6 Old=http://digikey.com/product-detail/en/C0805C104J3RACTU/399-7997-2-ND/2211735 New=http://digikey.com/product-detail/en/CL21B104KACNNNC/1276-1099-2-ND/3886757
+Change Component Parameter Library Reference in C6 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Value of Parameter Manufacturer in Part C6 Old=Kemet New=Samsung Electro-Mechanics America, Inc.
+Change Value of Parameter PartId in Part C6 Old=6117 New=5699
+Change Value of Parameter Part Number in Part C6 Old=C0805C104J3RACTU New=CL21B104KACNNNC
+Change Value of Parameter Price in Part C6 Old=0.1549 New=0.0099
+Change Value of Parameter Supplier Part Number 1 in Part C6 Old=399-7997-2-ND New=1276-1099-2-ND
+Change Value of Parameter Tolerance in Part C6 Old=5% New=10%
+Replace Part C6 Capacitor in C:\Users\Public\Documents\Altium\Projects\InterlockSystem\RTD Measurement\ComparisonSch.SchDoc with Capacitor from Celestial Library Database.DbLib
